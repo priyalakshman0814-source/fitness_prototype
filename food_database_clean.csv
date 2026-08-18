@@ -1,0 +1,612 @@
+﻿id,name,portion_size,protein_g,green_carbs_g,net_carbs_g,mixed_fat_g,pure_fats_g,fiber_g,gi,gl,calories,recommendation_type
+food_0001,Green Juice (without fibre),1 glass - 250 ml,0.1,1.0,0.5,0.0,0.4,0.0,15.0,0.08,10.0,R
+food_0002,Green Juice (with fibre),1 glass - 250 ml,0.2,2.0,0.5,0.0,0.15,3.0,15.0,0.16,18.0,R
+food_0003,Petha (ash gourd) Juice,1 glass - 250 ml,0.7,3.5,0.0,0.0,0.2,5.0,21.0,0.0,18.0,R
+food_0004,Petha (ash gourd),100 g - Raw,0.4,3.0,0.0,0.0,0.0,2.9,0.0,0.0,13.0,R
+food_0005,Green Juice with fruit,1 glass - 250 ml,0.8,3.0,5.0,0.0,2.0,4.3,40.0,2.0,40.0,OR
+food_0006,"Vegetable Salad (Cucumber, Radish, Carrot, Lettuce, Bok Choy, etc.)",1 katori - 80 g,1.4,3.3,1.9,0.0,2.1,1.4,15.0,0.2,30.0,R
+food_0007,Vegetables - measured raw,100 g,2.9,8.6,4.0,0.0,1.0,4.4,15.0,0.6,60.0,R
+food_0008,Vegetables- Sauteed /stir fried,1 small plate - 150 g,4.93,14.62,6.8,0.0,9.0,7.48,21.0,1.428,190.0,R
+food_0009,Vegetables - Steamed/boiled,1 small plate - 150 g,4.64,13.76,6.4,0.0,1.6,7.04,21.0,1.344,116.0,R
+food_0010,Vegetables - Roasted,1 small plate - 150 g,5.8,17.2,8.0,0.0,5.0,8.8,21.0,1.68,172.0,R
+food_0011,Fermented Vegetables / Sauerkraut,30 g,2.2,5.7,2.2,0.0,0.1,3.5,0.0,0.0,8.0,R
+food_0012,Vegetable Clear Soup,1 katori - 150 ml,0.9,2.1,1.4,0.0,0.2,0.7,15.0,0.2,20.0,R
+food_0013,"Vegetable Cream Soup, with milk",1 katori - 150 ml,2.7,1.4,3.2,0.0,2.7,1.4,27.0,0.9,95.0,R
+food_0014,"Vegetable Cream Soup, with cheese",1 katori - 150 ml,2.7,4.6,0.0,0.0,2.7,1.4,15.0,0.4,95.0,R
+food_0015,Vegetable thick Soup,1 katori - 150 ml,1.4,3.0,0.0,0.0,0.3,1.0,15.0,0.3,30.0,R
+food_0016,Spinach/leafy green Soup,1 katori - 150 ml,0.8,5.9,0.0,0.0,0.6,1.0,15.0,0.65,31.0,R
+food_0017,Pumpkin Soup,1 katori - 150 ml,2.3,0.0,5.5,2.7,0.0,0.6,52.0,2.3,57.0,OR
+food_0018,Wheat roti /Chapati,1 Roti - 35 g,2.0,0.0,17.0,0.0,0.0,2.0,67.0,12.0,85.0,OR
+food_0019,Makki/Corn  Roti/Chapati,1 Roti - 50 g,1.6,0.0,17.4,0.0,0.0,1.8,52.0,8.0,112.0,OR
+food_0020,Mix Grain Roti/Chapati,1 Roti - 35 g,3.1,0.0,15.9,0.7,0.0,3.0,60.0,9.0,82.0,OR
+food_0021,Missi Roti/Chapati,1 Roti - 55 g,3.6,0.0,13.2,6.4,0.0,2.6,69.0,9.2,133.0,MR
+food_0022,Sandwich (mayo and veggies),1 sandwich,12.0,0.0,26.2,11.0,0.0,1.5,81.0,21.0,257.0,NR
+food_0023,Thepla,1 thepla - 40 g,3.0,0.0,16.6,5.4,0.0,2.1,48.0,7.6,126.0,OR
+food_0024,Spinach thepla,1 thepla - 40 g,3.0,0.0,14.2,4.4,0.0,2.3,45.0,6.39,108.0,OR
+food_0025,Naan,1 Piece - approx 50 g,3.7,0.0,22.9,4.6,0.0,1.3,85.0,18.0,149.0,NR
+food_0026,Dal Roti/Chapati  (GL not accurate),1 Piece - approx 40 g,3.8,0.0,19.7,0.7,0.0,3.1,50.0,8.0,100.0,OR
+food_0027,Plain Parantha,1 Parantha - 50 g,4.2,0.0,23.9,4.2,0.0,3.7,77.0,15.0,140.0,NR
+food_0028,Methi Parantha,1 Parantha - 60 g,4.3,0.0,22.5,5.1,0.0,4.0,73.0,14.24,153.0,NR
+food_0029,Gobi/Cauflower Parantha,Parantha - 80 g,4.1,0.0,20.9,6.1,0.0,4.0,74.0,12.51,154.0,NR
+food_0030,Mooli /Muli Parantha,1 Parantha - 80 g,3.9,0.0,21.8,6.0,0.0,3.8,75.0,14.1,156.0,NR
+food_0031,Aaloo /Alu Parantha,1 Parantha - 100 g,4.8,0.0,32.1,6.3,0.0,4.5,76.0,19.8,203.0,NR
+food_0032,Paneer Parantha,1 parantha - 80 g,10.1,0.0,15.9,13.7,0.0,2.4,78.0,11.0,226.0,NR
+food_0033,Vegetable Parantha,1 parantha - 80 g,3.6,0.0,17.9,5.4,0.0,3.7,71.0,10.9,148.0,NR
+food_0034,Chicken Roll / Chicken keema roll,1 roll - 140 g,16.2,0.0,28.1,10.3,0.0,1.8,81.0,20.1,266.0,NR
+food_0035,Poori / Puri,1 regular - 50 g,4.0,0.0,23.1,6.6,0.0,3.6,82.0,16.0,167.0,NR
+food_0036,Matthi / Mathiya,1 Piece - 25 g,1.5,0.0,11.1,4.5,0.0,1.8,84.0,7.5,90.0,NR
+food_0037,Namak Para / Pare,1 para - 5 g,0.3,0.0,2.3,1.3,0.0,0.1,84.0,1.76,22.0,NR
+food_0038,Puran Poli,1 medium poli - 75 g,4.0,0.0,28.2,4.9,0.0,3.1,75.0,18.8,172.0,OR
+food_0039,Bhatura / Batura,1 Piece - 100 g,5.6,0.0,32.9,16.8,0.0,1.2,85.0,27.0,307.0,NR
+food_0040,Rice (bowl),1 Katori - 120 g cooked,2.6,0.0,26.7,0.4,0.0,0.5,73.0,22.0,120.0,OR
+food_0041,Rice (spoon),1 teaspoon - 20 g cooked,0.4,0.0,4.3,0.1,0.0,0.1,73.0,4.0,19.0,OR
+food_0042,Rice (g),50 g cooked,1.1,0.0,10.8,0.2,0.0,0.2,73.0,9.0,49.0,OR
+food_0043,Rice (raw),100 gm raw,6.7,0.0,82.0,0.5,0.0,0.0,72.0,59.04,356.0,OR
+food_0044,Vegetable Biryani / Vegetable Pulao,1 katori - 124 g,2.5,0.0,20.3,5.6,0.0,1.5,65.0,12.35,142.0,OR
+food_0045,Moong dal / green gram cooked,1 katori - 150 g,9.1,0.0,22.9,1.3,0.0,3.3,30.0,5.4,138.0,MR
+food_0046,Brown Rice (bowl),1 Katori - 120g cooked,2.4,0.0,22.8,0.9,0.0,1.0,68.0,17.0,109.0,OR
+food_0047,Brown Rice (spoon),1 teaspoon - 20 g cooked,0.4,0.0,3.7,0.1,0.0,0.2,68.0,3.0,18.0,OR
+food_0048,Brown Rice (g),50 g cooked,1.0,0.0,9.2,0.4,0.0,0.4,68.0,7.0,44.0,OR
+food_0049,Bajra / Millet Khichadi,1 Katori - 100 g,3.0,0.0,10.8,3.1,0.0,1.7,57.0,6.0,83.0,OR
+food_0050,Bhel Puri,1 Katori - 45 g,2.4,0.0,11.4,4.2,0.0,1.3,61.0,6.1,92.0,NR
+food_0051,Murmura / Puffed Rice (bowl),1 katori - 10 g,0.7,0.0,6.6,0.0,0.0,0.2,73.0,4.5,29.0,NR
+food_0052,Dal Paani,250 ml,2.0,0.0,9.8,0.0,1.2,1.4,37.0,2.2,57.0,R
+food_0053,Black chana water,250 ml,0.9,0.0,3.1,0.0,0.3,1.2,32.0,0.32,19.0,R
+food_0054,"Dal Khichadi (dal + veg, no rice)",1 Katori - 100 g,4.2,1.0,7.7,0.3,3.5,3.2,15.0,2.2,97.4,MR
+food_0055,Bread - white,1 Slice - approx 20 g,1.7,0.0,11.4,0.4,0.0,0.5,90.0,10.26,54.0,NR
+food_0056,Bread - multigrain,1 Slice - approx 20 g,1.9,0.0,8.0,0.4,0.0,1.3,70.0,5.6,45.0,NR
+food_0057,"Sooji, Rawa",100 g raw,12.0,0.0,69.8,1.5,0.0,1.2,66.0,46.068,345.0,NR
+food_0058,Besan / Gram flour,10 g,2.2,0.0,5.8,0.7,0.0,1.1,10.0,0.58,39.0,R
+food_0059,Sattu (Chana),10 g,2.2,0.0,5.8,0.7,0.0,1.1,28.0,1.3,39.0,R
+food_0060,Stuffed vegetable Roti,1 Piece - approx 50 g,3.2,0.0,17.7,0.5,0.0,2.9,65.0,10.0,87.0,OR
+food_0061,Bajra / Millet,Raw 10 g,1.1,0.0,6.1,0.5,0.0,1.1,57.0,3.1,36.0,OR
+food_0062,Foxtail Millet,Raw 10 g,1.23,0.0,6.0,0.43,0.0,0.98,54.0,3.2,35.0,OR
+food_0063,Amaranth aata roti,1 roti (40 g),5.8,0.0,22.0,2.28,0.0,2.8,97.0,18.0,148.0,OR
+food_0064,Amaranth/rajgira,100 gm (dry weight),13.6,0.0,58.5,0.7,0.0,6.7,107.0,62.595,371.0,OR
+food_0065,Idli,1 Piece - 50 g,2.5,0.0,15.1,0.9,0.0,1.1,69.0,11.0,78.0,OR
+food_0066,Dal idli,1 Piece - 50 g,4.8,0.0,11.8,0.6,0.0,1.8,54.0,5.4,72.0,MR
+food_0067,Dosa,1 Piece (medium - 1/3 cup batter) - 80 g,3.6,0.0,21.7,5.9,0.0,1.5,66.0,14.0,154.0,MR
+food_0068,Cheese dosa,1 medium - 115 g,7.9,0.0,24.5,10.6,0.0,1.9,62.0,14.012,224.0,MR
+food_0069,Paneer dosa,1 medium - 165 g,8.9,0.0,28.7,10.8,0.0,3.7,61.0,15.25,246.0,MR
+food_0070,Masala dosa,1 medium - 140 g,4.5,0.0,31.3,8.7,0.0,2.6,71.0,20.37,221.0,OR
+food_0071,Millet + urad dosa,1 small dosa 50 g,5.8,0.0,21.2,1.5,0.0,1.4,48.0,10.4,142.0,OR
+food_0072,Rawa dosa,1 small dosa 50 g,2.2,0.0,16.8,3.0,0.0,0.7,65.0,11.0,110.0,
+food_0073,Upma,1 Katori - 130 g,4.4,0.0,24.3,6.3,0.0,2.5,68.0,17.0,171.0,OR
+food_0074,Besan Cheela/Chilla,1 Cheela - 50 g,3.6,0.0,9.3,1.2,5.7,1.8,10.0,2.1,113.0,MR
+food_0075,Besan+Egg Cheela/Chilla,1 Cheela - 50 g,4.6,0.0,7.6,0.9,6.8,1.4,28.0,1.7,119.0,MR
+food_0076,Dal Cheela/Chilla,1 cheela - 50g,4.6,0.0,9.2,0.23,3.0,3.2,25.0,2.3,97.0,MR
+food_0077,Poha / Flattened RIce / Chura,Soaked - 100 g,2.6,0.0,26.9,1.5,0.0,1.1,75.0,20.0,130.0,NR
+food_0078,Oats,Uncooked 100 g,17.0,0.0,56.0,7.0,0.0,10.0,55.0,30.8,389.0,NR
+food_0079,Oats Daliya,1 katori - 130 g,2.4,0.0,12.0,3.0,0.0,2.3,60.0,5.9,84.0,OR
+food_0080,"Oats Porridge with milk, unsweetened",1 katori - 130 g,6.2,0.0,16.7,6.0,0.0,2.0,54.0,7.6,140.0,NR
+food_0081,"Milk - Raw, unprocessed, full cream",250 ml,8.0,0.0,11.0,0.0,15.0,0.0,31.0,3.41,220.0,MR
+food_0082,Milk - Pasteurised - 3% fat,250 ml,8.0,0.0,11.0,0.0,8.0,0.0,38.0,4.18,145.0,MR
+food_0083,Milk - Pasteurised - 6% fat,250 ml,8.0,0.0,11.0,0.0,15.0,0.0,31.0,3.41,210.0,MR
+food_0084,Milk - Homogenised (tetrapack) - 3% fat,250 ml,8.0,0.0,11.0,0.0,8.0,0.0,38.0,4.18,145.0,OR
+food_0085,Milk - Homogenised  (tetrapack) - 6% fat,250 ml,8.0,0.0,11.0,0.0,15.0,0.0,31.0,3.41,210.0,OR
+food_0086,Almond Milk,60 ml,2.0,0.0,6.0,0.0,4.5,1.0,25.0,1.5,70.0,OR
+food_0087,Soya Milk (unsweetened),100 ml,4.2,0.0,1.0,1.8,0.0,0.3,34.0,0.34,39.0,NR
+food_0088,Oats Milk (unsweetened),100 ml,1.1,0.0,5.5,2.9,0.0,0.8,59.0,3.245,56.0,NR
+food_0089,Mawa/Khoya,1 tbsp - 30 g,3.2,0.0,4.4,0.0,6.0,0.0,38.0,1.364,88.0,OR
+food_0090,Vermicelli / Jave - plain,1 bowl - 235 g,5.4,0.0,37.0,6.4,0.0,2.9,67.0,24.79,233.0,NR
+food_0091,Dalia - Plain,1 katori - 130 g,3.0,0.0,14.0,1.9,0.0,4.5,57.0,7.98,97.0,OR
+food_0092,Dalia - Sweet,1 katori - 130 g,3.0,0.0,22.0,3.8,0.0,2.6,69.0,15.18,146.0,NR
+food_0093,Corn Flakes,Raw 1 cup - 35 g,1.8,0.0,30.3,0.3,0.0,1.5,81.0,25.0,131.0,NR
+food_0094,Quinoa,Cooked 1 katori - 110 g,4.9,0.0,23.7,2.1,0.0,3.1,53.0,13.0,133.0,OR
+food_0095,Singhada / Water chestnut flour,100 g dry weight,9.0,0.0,76.0,3.4,0.0,1.0,60.0,45.6,347.0,NR
+food_0096,Dhokla,1 Dhokla - approx 35 g,2.4,0.0,5.6,2.4,0.0,1.0,35.0,2.0,54.0,NR
+food_0097,"Pizza slice (Medium, thin crust)",50 g,6.0,0.0,16.6,4.7,0.0,0.8,80.0,13.28,132.0,NR
+food_0098,"Pizza slice (Medium, thick crust)",70 g,7.7,0.0,28.0,4.9,0.0,1.3,80.0,24.3,186.0,NR
+food_0099,Burger,1 Burger - approx 250 g,8.9,0.0,59.5,13.0,0.0,4.1,66.0,39.27,384.0,NR
+food_0100,Pasta,1 cup - approx 140 g,8.0,0.0,41.0,1.7,0.0,2.5,48.0,19.1,221.0,NR
+food_0101,Couscous,100 g cooked,3.79,0.0,21.8,0.16,0.0,1.4,66.0,14.388,112.0,NR
+food_0102,Baati / bati,1 Baati - 30 g,1.8,0.0,9.0,5.0,0.0,1.6,67.0,6.1,94.0,NR
+food_0103,Choorma / churma,1 tablespoon - 14 g,0.9,0.0,5.4,4.7,0.0,0.7,78.0,3.67,68.0,NR
+food_0104,Sabudana / Sago,Dry half cup - 75 g,0.15,0.0,66.0,0.15,0.0,0.7,67.0,42.0,267.0,NR
+food_0105,Sabudana / Sago - Khichdi,1 katori - 100 g,2.7,0.0,25.4,7.2,0.0,1.7,70.0,16.5,176.0,NR
+food_0106,Samak rice / Barnyard Millet,Cooked 1 katori - 124 g,2.2,0.0,18.4,2.6,0.0,2.5,52.0,8.26,105.0,NR
+food_0107,Cauliflower Rice,1 katori - 130 g,3.1,5.3,0.0,0.0,5.5,2.65,35.0,1.1,99.0,R
+food_0108,Samosa,1 Samosa - 100 g,4.0,0.0,30.1,15.3,0.0,1.8,85.0,24.055,276.0,NR
+food_0109,Pakoda,1 Pakoda - approx 10 g,0.7,0.0,2.1,1.6,0.0,0.6,35.0,0.525,25.0,OR
+food_0110,Paneer Bhurji,1 Katori - 100 g,11.7,0.0,3.2,0.0,11.0,0.7,31.0,1.0,165.0,R
+food_0111,Paneer Pakoda,1 peice - 20 g,2.9,0.0,2.2,3.8,0.0,0.4,42.0,0.9,55.0,OR
+food_0112,Shahi Paneer,1 katori - 150 g,9.1,0.0,7.4,0.0,14.5,2.2,36.0,1.8,190.0,R
+food_0113,Roti roll/ wrap - Paneer & Veggies,1 roll/wrap,13.1,0.0,27.4,16.0,0.0,4.4,59.0,13.5,309.0,OR
+food_0114,Namkeen/farsan/mixture,1 teaspoon - approx 7g,0.9,0.0,3.2,2.7,0.0,0.1,56.0,2.0,39.0,NR
+food_0115,Ram ladoo - moong dal pakoda,1 peice - 20 g,2.7,0.0,6.7,2.6,0.0,1.4,38.0,1.8,61.0,OR
+food_0116,Chips,10 chips - 12 g,1.0,0.0,6.7,4.8,0.0,0.6,54.0,3.0,74.0,NR
+food_0117,Golgappe / Pani puri,1 piece,0.5,0.0,4.0,1.8,0.0,0.3,70.0,3.0,35.0,NR
+food_0118,Khasta Kachori,1 piece - 50 g,3.0,0.0,15.1,14.0,0.0,1.2,85.0,12.0,199.0,NR
+food_0119,Corn,1 medium corn - 90 g,2.9,0.0,17.1,1.1,0.0,2.4,52.0,8.0,77.0,OR
+food_0120,Sweet corn,1 cup - approx 145 g,4.8,0.0,27.1,2.0,0.0,2.9,52.0,13.0,125.0,NR
+food_0121,Soya Chaap,1 bowl / katori - approx 150 g,22.0,0.0,25.0,12.0,0.0,11.6,50.0,12.5,342.0,NR
+food_0122,Noodles,1 bowl / katori - approx 100 g,3.4,0.0,21.4,4.1,0.0,1.2,85.0,17.0,136.0,NR
+food_0123,Aloo Tikki /Alu Tikki,1 tikki,0.7,0.0,10.2,4.6,0.0,0.8,77.0,7.0,84.0,NR
+food_0124,Uttapam,1 Uttapam - approx 120 g,5.2,0.0,31.7,8.7,0.0,2.6,70.0,20.0,226.0,OR
+food_0125,Manchurian,1 Manchurian - approx 20 g,0.7,0.0,3.6,2.4,0.0,0.5,65.0,2.0,38.0,OR
+food_0126,Vada/Wada - Urad Dal,1 Vada - approx 65 g,6.8,0.0,16.9,14.6,0.0,3.4,54.0,7.2,226.0,OR
+food_0127,Vada/Wada - potato,1 vada - approx 50 g,2.3,0.0,11.2,8.3,0.0,1.4,82.0,8.0,128.0,NR
+food_0128,Bread Pakoda,1 Half-Bread Slice,5.3,0.0,24.8,17.9,0.0,4.4,85.0,17.0,282.0,NR
+food_0129,Spring Rolls,1 Piece - approx 70 g,2.5,0.0,19.4,12.2,0.0,1.3,60.0,11.0,200.0,NR
+food_0130,Chicken Sausage - Homemade,1 medium - approx 35 g,5.8,0.0,0.4,0.0,4.2,0.0,28.0,0.1,63.0,R
+food_0131,Chicken Sausage - Preservative,1 medium - approx 35 g,5.8,0.0,0.4,0.0,4.2,0.0,28.0,0.1,63.0,NR
+food_0132,Ema Datshi - vegetarian,1 Bowl - 350.0 g,28.8,6.8,0.0,0.0,21.0,5.4,32.0,0.6,354.0,R
+food_0133,Ema Datshi - Chicken,1 Bowl - 350.0 g,38.0,5.2,0.0,0.0,27.0,3.4,29.0,0.45,440.0,R
+food_0134,Chicken Momo,1 piece - 38g,3.5,0.0,12.8,2.0,0.0,0.6,58.0,6.0,88.0,NR
+food_0135,Veg momo,1 piece - 36g,1.3,0.0,8.5,1.1,0.0,1.1,62.0,5.0,49.0,NR
+food_0136,Chicken soup,1 bowl - 350 g,16.8,9.1,0.0,0.0,2.3,2.3,32.0,1.1,130.0,R
+food_0137,Hash browns (Aloo tikki),1 piece - 100 g,2.5,0.0,25.4,10.0,0.0,11.0,76.0,11.0,205.0,NR
+food_0138,Hash browns (veggies),1 piece - 100 g,3.2,12.0,6.0,0.0,10.0,7.0,32.0,1.3,185.0,R
+food_0139,Papad,1 piece - 12g,2.1,0.0,6.0,1.6,0.0,1.6,49.0,1.3,46.0,MR
+food_0140,"Papad - Urad, Roasted",1 piece - 12g,2.1,0.0,6.0,1.6,0.0,1.6,49.0,1.3,46.0,MR
+food_0141,"Papad - Urad, Fried",1 piece - 16g,2.1,0.0,6.0,5.6,0.0,1.6,,1.0,82.0,OR
+food_0142,Rasam,1 katori - 150 g,3.5,9.2,0.0,0.0,1.6,0.9,35.0,2.4,65.0,R
+food_0143,Vegetable dal sambar,1 kator - 150 g,4.5,0.0,15.1,3.5,0.0,4.3,28.0,2.7,108.0,MR
+food_0144,Avial,1 Katori - 150 g,1.9,14.1,0.0,0.0,5.6,3.9,39.0,3.8,114.0,MR
+food_0145,Thoran / Toran,1 katori - 100 g,2.0,7.5,0.0,0.0,7.7,3.7,32.0,0.95,107.0,R
+food_0146,Lauki/Bottle Gourd - Raw,100 g,0.2,3.0,0.0,0.0,0.1,2.0,15.0,0.075,12.0,R
+food_0147,Lauki/Bottle Gourd Sabzi,1 katori - 100 g,0.7,3.7,0.0,0.0,3.7,2.5,15.0,0.16,50.0,R
+food_0148,Kaccha kela /Raw banana Sabzi,1 katori -  100 g,1.2,0.0,20.7,5.1,0.0,2.8,39.0,7.9,125.0,OR
+food_0149,Kaccha kela /Raw banana,"1 small (6"" - 7"" long) - 101 g",1.1,0.0,23.1,0.3,0.0,2.6,39.0,7.5,90.0,OR
+food_0150,Aloo Beans - Sabzi,1 katori - 100 g,1.8,0.0,12.0,4.3,0.0,2.6,62.0,5.8,93.0,NR
+food_0151,Gatte ki Sabzi,1 katori - 150 g,4.6,0.0,10.0,8.6,0.0,2.8,28.0,3.2,147.0,MR
+food_0152,Tindora/Ivy gourd - Raw,100 g,1.57,3.55,0.0,0.0,0.23,3.0,13.0,0.3,18.0,R
+food_0153,Tindora/Ivy gourd - Sabzi,1 katori - 100 g,2.2,5.1,0.0,0.0,4.0,4.0,13.0,0.4,60.0,R
+food_0154,Torai/Ridge Gourd - Raw,100 g,0.5,3.4,0.0,0.0,0.1,1.9,13.0,0.15,17.0,R
+food_0155,Torai/Ridge Gourd Sabzi,1 Katori - 150 g,0.9,5.3,0.0,0.0,2.8,2.9,13.0,0.28,50.0,R
+food_0156,Kheera/Cucumber,100 g,0.7,3.6,0.0,0.0,0.1,0.5,15.0,0.5,15.0,R
+food_0157,Palak/Spinach - Raw,100 g,2.0,2.9,0.0,0.0,0.7,2.5,15.0,0.06,26.0,R
+food_0158,Palak/Spinach Sabzi,1 Katori - 100 g,2.0,3.5,0.0,0.0,2.9,2.7,15.0,0.12,93.0,R
+food_0159,Leafy greens sabzi,1 Katori - 100 g,2.0,3.5,0.0,0.0,2.9,2.7,15.0,0.12,93.0,R
+food_0160,Broccoli - Raw,100 g,2.8,6.6,0.0,0.0,0.4,2.6,11.0,0.44,34.0,R
+food_0161,Amla/Indian gooseberry,1 piece,0.0,1.0,0.0,0.0,0.0,0.5,25.0,0.125,4.0,R
+food_0162,Parwal - Raw,250 g,3.5,8.9,0.0,0.0,0.8,7.5,25.0,0.3,60.0,R
+food_0163,Parwal Sabzi,1 katori - 100 g,1.4,6.1,0.0,0.0,4.4,2.7,32.0,0.9,70.0,R
+food_0164,Karela - Raw,250 g,4.0,10.5,0.0,0.0,0.5,10.8,16.0,0.0,63.0,R
+food_0165,Karela - Sabzi,1 Katori - 100 g,1.2,8.0,0.0,0.0,5.0,4.32,28.0,0.9,70.0,R
+food_0166,Broccoli Sabzi,1 Katori - 100 g,1.9,8.3,0.0,0.0,3.7,2.7,11.0,0.6,71.0,R
+food_0167,Celery  - Raw,1 medium stalk - 40 g,0.3,1.2,0.0,0.0,0.1,0.6,35.0,0.15,5.6,R
+food_0168,Cabbage - Raw,100 g,1.8,4.6,0.0,0.0,0.1,2.8,10.0,0.46,27.0,R
+food_0169,Cabbage Sabzi,1 katori - 100 g,1.5,5.7,0.0,0.0,4.2,2.6,8.0,0.9,62.0,R
+food_0170,Arbi /Taro Root - Sabzi,1 katori - 100 g,1.1,13.5,0.0,0.0,6.1,2.9,63.0,8.1,113.0,OR
+food_0171,Pumpkin/Kaddu - Sabzi,1 katori - 100 g,1.4,6.7,0.0,0.0,3.5,1.2,52.0,2.2,62.0,MR
+food_0172,Butternut squash,100 g,1.0,12.0,,0.1,0.0,2.0,5.1,51.0,45.0,MR
+food_0173,Radish / Mooli - Raw,100 g,0.7,3.4,0.0,0.0,0.1,1.6,30.0,0.54,17.0,MR
+food_0174,Cauliflower/Gobhi - Raw,100 g,1.9,5.0,0.0,0.0,0.4,2.0,20.0,0.6,30.0,R
+food_0175,Cauliflower /Gobhi - Sabzi,1 katori - 100 g,2.1,6.6,0.0,0.0,5.7,2.3,20.0,0.82,81.0,R
+food_0176,Sweet Potato/ Yam,1 medium - 151 g,2.1,0.0,26.9,0.1,0.0,4.0,51.0,11.2,115.0,NR
+food_0177,Capsicum - Raw,1 Medium - 119 g,1.0,5.5,0.0,0.0,0.2,2.0,15.0,0.7,24.0,R
+food_0178,Capsicum - Cooked,1 katori - 100 g,1.4,8.0,0.0,0.0,4.6,1.9,15.0,0.9,100.0,R
+food_0179,Bhindi / Ladiesfinger - Raw,100 g,1.9,6.4,0.0,0.0,0.2,3.6,32.0,0.92,35.0,R
+food_0180,Bhindi / Ladiesfinger Sabzi,1 katori - 100 g,1.8,7.1,0.0,0.0,3.7,3.1,32.0,1.28,68.0,R
+food_0181,Matar/Green Peas - Raw,100 g,5.0,14.0,9.0,0.0,0.2,5.0,51.0,4.5,81.0,MR
+food_0182,Matar/Green Peas - Cooked,100 g,5.5,15.5,11.0,0.0,0.25,5.5,51.0,5.61,85.0,MR
+food_0183,French Beans,100 g,1.7,4.5,0.0,0.0,0.1,2.5,15.0,0.675,26.0,R
+food_0184,Shalgam/Turnip,100 g raw,0.9,6.4,0.0,0.0,0.0,1.8,30.0,1.38,28.0,R
+food_0185,Mooli/Radish,100 g raw,0.7,3.4,0.0,0.0,0.0,1.6,16.0,0.5,16.0,R
+food_0186,Green Sabzi / Vegetables - Cooked,1 katori - 100 g,2.2,6.5,0.0,0.0,2.4,3.4,32.0,0.93,55.0,R
+food_0187,Brinjal / Eggplant - Raw,100 g,1.4,4.0,0.0,0.0,0.3,3.0,30.0,0.3,24.0,R
+food_0188,Brinjal Sabzi -Cooked,1 katori - 100 g,1.8,7.0,0.0,0.0,4.7,4.6,30.0,0.63,73.0,R
+food_0189,Zucchini - Raw,100 g,2.7,3.1,0.0,0.0,0.4,1.1,15.0,0.3,21.0,R
+food_0190,Singhaara (Water Chestnut) - Raw,1 Singhaara,0.1,0.3,2.2,0.0,0.0,0.3,54.0,1.2,9.0,MR
+food_0191,Boiled Potato,100 g,2.2,3.5,21.8,0.0,0.0,3.5,80.0,17.44,72.0,NR
+food_0192,Aloo /Potato Sabzi,1 Katori - 100 g,2.2,3.5,21.8,5.2,0.0,3.5,80.0,17.44,142.0,NR
+food_0193,Mushroom - Raw,1 medium - approx 18 g,0.6,0.8,0.0,0.0,0.2,0.2,32.0,0.1,4.0,R
+food_0194,Mushroom - Cooked,1 Katori - 100 g,2.4,3.3,0.0,0.0,0.6,0.8,32.0,0.8,33.0,R
+food_0195,Sarso Saag (Mustard greens / leaves) - Cooked,1 Katori - 100 g,2.8,6.3,0.0,0.0,3.2,2.9,15.0,0.5,64.0,R
+food_0196,Sarso (Mustard greens / leaves) - Raw,100 g,4.0,3.2,0.0,0.0,0.6,3.3,15.0,0.0,34.0,R
+food_0197,Gajar / Carrot - Raw (g),100 g,0.9,2.8,6.8,0.0,0.3,2.8,39.0,3.0,48.0,R
+food_0198,Gajar / Carrot - Raw (piece),1 medium - 60 g,0.6,1.7,4.2,0.0,0.2,1.7,39.0,2.0,29.0,R
+food_0199,Lemon water,with 1 lemon,0.0,0.0,0.7,0.0,0.0,0.0,22.0,0.1,2.0,R
+food_0200,Bok choy - Raw,1 leaf - 14 g,0.2,0.3,0.0,0.0,0.0,0.1,12.0,0.048,2.0,R
+food_0201,Bok choy - Cooked,1 bowl - 150 g,1.2,1.7,0.0,0.0,15.3,0.8,12.0,0.24,150.0,R
+food_0202,Beetroot - Raw (g),100 g,1.7,3.5,5.3,0.0,0.1,3.5,64.0,3.4,43.0,MR
+food_0203,Beetroot - Raw (piece),1 medium - 80 g,1.4,2.9,4.3,0.0,0.1,2.9,64.0,2.8,35.0,MR
+food_0204,Radish - Raw (g),100 g,0.7,3.4,0.0,0.0,0.1,1.6,32.0,0.5,17.0,R
+food_0205,Radish - Raw (piece),1 medium - 85 g,0.6,2.9,0.0,0.0,0.1,1.4,32.0,0.4,15.0,R
+food_0206,Lotus stem / Kamal kakdi,Raw 100 g,1.6,11.4,0.0,0.0,0.1,4.9,33.0,3.762,74.0,R
+food_0207,Raw Papaya,100 g,0.5,8.8,0.0,0.0,0.0,2.2,23.0,2.024,36.0,R
+food_0208,Banana Stem Sabzi,100 g,1.0,2.0,2.0,0.0,0.0,2.0,40.0,0.8,13.0,R
+food_0209,Raw Banana - cooked,100 g,1.1,0.0,20.1,0.0,0.0,2.6,30.0,6.03,88.0,OR
+food_0210,Onion - Raw (g),100 g,1.1,1.7,7.6,0.0,0.1,1.7,15.0,0.5776,40.0,MR
+food_0211,Onion - Raw (piece),1 medium - 70 g,0.8,1.2,5.3,0.0,0.1,1.2,15.0,0.2809,28.0,MR
+food_0212,White Onion,100 g,1.4,1.4,8.7,0.0,0.2,1.4,15.0,0.7569,44.0,OR
+food_0213,Tomato - Raw,100 g,0.8,1.6,1.7,0.0,0.2,1.6,18.0,0.306,20.0,R
+food_0214,Olive,1 piece - 3.2g,0.0,0.2,0.0,0.0,0.4,0.1,0.0,0.0,4.0,R
+food_0215,Pesto sauce,2 tablespoon - 12g,2.0,1.3,0.7,0.0,8.0,0.6,11.0,0.08,82.0,R
+food_0216,Mayonaise (eggless),1 tablespoon - 12g,0.6,0.0,1.08,6.6,0.0,0.0,65.0,0.8,62.5,NR
+food_0217,Mayonaise (Egg),1 tablespoon - 12g,0.12,0.0,0.84,4.0,0.0,0.0,57.0,0.6,40.0,NR
+food_0218,Sugar - Granulated,1 teaspoon - 8gm,0.0,0.0,8.0,0.0,0.0,0.0,65.0,5.2,31.0,NR
+food_0219,Sugar cube,4 g,0.0,0.0,4.0,0.0,0.0,0.0,63.0,2.52,15.0,NR
+food_0220,Jaggery Powder,1 teaspoon - approx 6.5 g,0.0,0.0,6.0,0.0,0.0,0.0,85.0,5.1,31.0,NR
+food_0221,Honey (spoon),1 teaspoon - approx 10 g,0.0,0.0,8.0,0.0,0.0,0.0,60.0,5.0,32.0,NR
+food_0222,Honey (g),1g,0.0,0.0,0.8,0.0,0.0,0.0,60.0,0.5,3.0,NR
+food_0223,Xylitol,1 teaspoon - 4g,0.0,0.0,4.0,0.0,0.0,0.0,7.0,0.28,10.0,OR
+food_0224,Erythritol,1 teaspoon - 4g,0.0,0.0,1.0,0.0,0.0,0.0,1.0,0.01,4.0,OR
+food_0225,Stevia,1 teaspoon - 4g,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,R
+food_0226,Black Tea (unsweetened),1 teacup - 180.0 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,R
+food_0227,"Tea/Coffee with 25% milk, sweetened",1 cup 180 ml (Enter sugar separately),1.44,0.0,1.98,1.9,0.0,0.0,6.84,0.72,30.24,NR
+food_0228,"Tea/Coffee with 50% milk, sweetened",1 cup 180 ml (Enter sugar separately),2.88,0.0,3.96,3.7,0.0,0.0,13.68,1.44,60.48,NR
+food_0229,"Tea/Coffee with 100% milk, sweetened",1 cup 180 ml (Enter sugar separately),8.0,0.0,11.0,10.3,0.0,0.0,38.0,4.0,168.0,MR
+food_0230,"English Tea (1 tbsp Milk, unsweetened)",1 teacup - 180.0 ml,0.48,0.0,0.6599999999999999,0.0,0.618,0.0,2.28,0.24,10.08,MR
+food_0231,"Milk Tea (25% Milk, unsweetened)",1 teacup - 180.0 ml,1.44,0.0,1.98,0.0,1.854,0.0,6.84,0.72,30.24,MR
+food_0232,"Milk Tea (50% Milk, unsweetened)",1 teacup - 180.0 ml,2.88,0.0,3.96,0.0,3.708,0.0,13.68,1.44,60.48,MR
+food_0233,Green Tea / Herbal Tea (unsweetened),1 teacup - 180.0 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,R
+food_0234,Black Coffee (unsweetened),1 teacup - 180.0 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,MR
+food_0235,"Coffee (25% Milk, unsweetened)",1 teacup - 180.0 ml,1.44,0.0,1.98,0.0,1.854,0.0,6.84,0.72,30.24,MR
+food_0236,"Coffee (50% Milk, unsweetened)",1 teacup - 180.0 ml,2.88,0.0,3.96,0.0,3.708,0.0,13.68,1.44,60.48,MR
+food_0237,"Cold Coffee (100% milk, unsweetened)",1 glass - 250 ml,8.0,0.0,11.0,0.0,10.3,0.0,38.0,4.0,168.0,MR
+food_0238,Apple Cider Vinegar ACV,15 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,R
+food_0239,Coconut water,1 coconut - approx 200.0 ml,0.6,0.0,9.1,0.0,0.0,0.0,50.0,4.55,36.0,OR
+food_0240,Tender Coconut Malai,30 g,1.0,1.3,0.0,0.0,0.9,0.7,41.0,0.533,17.0,R
+food_0241,Dahi / Curd - homemade,1 Katori - 150 g,4.7,0.0,4.5,0.0,6.0,0.0,28.0,1.0,90.0,R
+food_0242,Dahi / Curd - packaged,1 Katori - 150 g,4.7,0.0,4.5,0.0,6.0,0.0,28.0,1.0,90.0,R
+food_0243,Greek Yogurt - unsweetened,100 g,7.0,0.0,6.5,0.0,2.2,0.0,14.0,0.9,74.0,R
+food_0244,Yakult - Red,1 bottle - 80 ml,1.0,0.0,12.0,0.0,0.0,0.0,81.0,8.3,50.0,NR
+food_0245,Yakult - Blue (light),1 bottle - 80 ml,1.0,0.0,6.0,0.0,0.0,2.0,77.0,4.3,25.0,NR
+food_0246,Salad Dressing (vinaigrette),1 tablespoon - 15 g,0.0,0.4,0.0,0.0,6.0,0.0,10.0,0.04,67.0,R
+food_0247,Boondi Raita,1 Katori - 150 g,5.2,0.0,7.4,0.0,6.0,1.0,45.0,2.1,108.0,MR
+food_0248,Vegetable Raita,1 Katori - 150 g,4.1,0.0,5.5,0.0,5.0,0.6,22.0,1.02,81.0,R
+food_0249,Lassi - Salted,1 glass - 250 ml,6.1,0.0,6.1,0.0,5.2,0.1,28.0,1.8,102.0,R
+food_0250,Lassi - Sweet (2 tsp sugar),1 glass - 250 ml,6.4,0.0,25.3,8.3,0.0,0.1,82.0,20.1,198.0,NR
+food_0251,Butter Milk / Chaach,1 glass - 250 ml,2.3,0.0,2.3,0.0,3.0,0.0,22.0,0.47,45.0,R
+food_0252,Paneer / Cottage Cheese,10 g,2.0,0.0,0.4,0.0,2.4,0.0,27.0,0.108,31.0,R
+food_0253,"Cheese - fermented, unprocessed",25 g,5.0,0.0,0.4,0.0,6.5,0.0,34.0,0.0,80.0,R
+food_0254,Cheese Slice - processed,1 Slice - 20 g,4.0,0.0,0.3,0.0,5.0,0.0,34.0,0.0,62.0,OR
+food_0255,Cheese Cube - processed,1 Cube - 25 g,5.0,0.0,0.4,0.0,6.5,0.0,34.0,0.0,80.0,OR
+food_0256,Cheese with carb,25 g cheese,5.0,0.0,0.4,6.5,0.0,0.0,34.0,1.4,80.0,NR
+food_0257,Malaai / Cream,1 spoon - approx 10 g,0.4,0.0,0.4,0.0,3.0,0.0,38.0,0.1,30.0,R
+food_0258,Tofu,10 g,1.7,0.0,0.3,0.0,0.9,0.2,15.0,0.02,14.0,OR
+food_0259,Tofu - Non GMO,10 g,1.7,0.0,0.3,0.0,0.9,0.2,15.0,0.02,14.0,R
+food_0260,Almond milk - homemade,1 glass - 250.0 ml,1.0,1.0,0.0,0.0,3.0,4.0,10.0,0.0,35.0,MR
+food_0261,Coconut milk (thick) - homemade,1 glass - 150 g coconut used,5.7,5.5,9.5,0.0,59.6,5.5,42.0,4.0,575.0,R
+food_0262,Coconut milk - packaged,1 glass - 250 ml,1.5,0.0,2.0,0.0,18.0,0.0,52.0,1.6,180.0,NR
+food_0263,Mozzarella Cheese,100.0 g,28.0,0.0,3.1,0.0,17.0,0.0,34.0,1.054,280.0,R
+food_0264,Roasted Chana,100 g,20.0,0.0,52.0,0.0,10.0,8.0,28.0,14.56,400.0,MR
+food_0265,Roasted Peanuts,10 g,2.6,0.0,2.7,0.0,4.0,1.1,14.0,0.378,57.0,MR
+food_0266,Peanuts (raw),10 g,2.6,0.0,0.7,0.0,4.9,0.9,13.0,0.08,56.7,MR
+food_0267,Coconut Chutney,1 tablespoon - 15 g,0.3,0.0,0.9,0.0,2.9,0.8,18.0,0.01,31.0,R
+food_0268,Green Chutney,1 tablespoon - 15 g,0.15,0.1,0.0,0.0,0.0,0.25,33.0,0.0033,3.0,R
+food_0269,Tamarind-jaggery Meetha Chutney,1 spoon 15 g,0.0,0.0,5.4,0.0,0.0,0.5,53.0,2.862,21.0,NR
+food_0270,Tamarind,1 tamarind 5 g,0.1,0.1,1.1,0.0,0.0,0.1,23.0,0.253,5.0,MR
+food_0271,Gond Katira,100 g,4.6,0.0,5.0,0.0,0.0,30.0,15.0,0.75,70.0,MR
+food_0272,Chaat (Matra/Peas/Chana),1 katori - 150 g,6.8,0.0,20.5,0.5,0.0,0.4,52.0,10.0,114.0,OR
+food_0273,Sprouts,1 Katori - 80 g,2.4,0.0,4.8,0.2,0.0,1.4,28.0,1.0,24.0,MR
+food_0274,Alfalfa sprouts,1 cup - 33 g,1.3,0.0,0.7,0.2,0.0,0.6,25.0,0.0,8.0,MR
+food_0275,Methi dana/seeds,10g - Dry,2.3,3.3,0.0,0.0,0.6,2.5,13.0,0.429,32.0,R
+food_0276,Halim seeds /Garden cress,1 cup - 50 g,1.8,0.0,2.3,0.4,0.0,0.6,15.0,0.25,16.0,MR
+food_0277,Baked beans,100 g,6.0,0.0,22.0,5.0,0.0,6.0,57.0,9.12,155.0,NR
+food_0278,Dal raw,100g dry weight,21.7,0.0,40.0,1.56,0.0,15.0,29.0,11.6,330.0,MR
+food_0279,Dal - thick,1 Katori - 150 g,11.0,0.0,24.0,0.8,0.0,7.5,28.0,6.7,171.5,MR
+food_0280,Dal - medium thick,1 Katori - 150 g,8.3,0.0,18.0,0.6,0.0,5.6,28.0,5.0,128.625,MR
+food_0281,Chana dal - thick,1 Katori - 150 g,10.5,0.0,21.9,3.2,0.0,8.7,8.0,1.7,192.0,MR
+food_0282,Chana dal - medium thick,1 Katori - 150 g,7.9,0.0,16.4,2.4,0.0,6.5,8.0,1.3,144.0,MR
+food_0283,Rajma - boiled - (g),100 g,9.0,0.0,13.0,1.0,0.0,9.0,24.0,3.12,123.0,MR
+food_0284,Black eyed peas / Lobia / Chawli,100 g boiled,3.8,0.0,7.7,0.0,0.0,3.1,43.0,3.311,62.0,MR
+food_0285,Kabuli Chana/Chickpeas,100 g boiled,9.0,0.0,16.0,2.8,0.0,6.4,10.0,1.6,164.0,MR
+food_0286,Soya Beans,100 g boiled,14.4,0.0,19.4,2.6,0.0,7.6,15.0,2.91,178.4,MR
+food_0287,Horsegram,100 g Dry weight,22.0,0.0,52.0,0.0,0.0,5.0,51.0,26.52,321.0,OR
+food_0288,Hummus,1 tablespoon - 15 g,1.1,0.0,2.1,1.3,0.0,0.9,28.0,0.7,27.0,MR
+food_0289,Misal (sprouted moth / moong cooked),1 katori - 150 g,3.8,0.0,9.0,9.3,0.0,1.2,38.0,3.6,136.0,MR
+food_0290,Beans / legumes sabzi,1 katori - 150 g,3.8,0.0,9.0,9.3,0.0,1.2,38.0,3.6,136.0,MR
+food_0291,Green/brown/black Chana cooked,1 Katori - 150 g,5.0,0.0,19.0,1.8,0.0,7.5,28.0,5.32,120.0,MR
+food_0292,Soya nuggets - sabzi,1 katori - 200 g,20.0,0.0,14.0,8.0,0.0,5.0,26.0,2.2,150.0,NR
+food_0293,Kadhi,1 Katori - 150 g,3.0,0.0,5.4,5.2,0.0,0.9,31.0,2.0,79.0,MR
+food_0294,Sambhar,1 Katori - 150 g,5.6,0.0,16.1,3.1,0.0,3.5,22.0,4.0,115.0,MR
+food_0295,Soybean curry,1 Katori - 150 g,8.8,0.0,7.3,6.2,0.0,5.3,16.0,0.5,120.0,MR
+food_0296,Thai Curry,1 Katori - 150 g,2.2,6.0,0.0,0.0,9.6,2.6,25.0,0.75,118.0,R
+food_0297,Paneer Tikka,1 Piece - approx 40 g,8.0,0.0,2.7,0.0,10.4,0.6,30.0,1.0,136.0,R
+food_0298,Cauliflower rice (cup),1 cup - approx 125 g,3.1,5.3,0.0,0.0,0.5,2.2,32.0,1.25,42.0,R
+food_0299,Cauliflower rice (g),100 g,2.5,4.3,0.0,0.0,0.4,1.8,32.0,1.0,34.0,R
+food_0300,Tomato Onion Gravy Masala/Salan,1 katori - 150 g,2.2,4.0,8.0,3.0,3.0,3.6,38.0,3.04,112.0,MR
+food_0301,Seeds Nuts Gravy (Masala),1 katori - 100 g,4.5,6.6,4.0,0.0,10.0,6.6,20.0,1.0,142.0,R
+food_0302,Matar Paneer,1 katori - 150 g,9.6,0.0,8.3,0.0,9.0,3.4,47.0,2.3,155.0,R
+food_0303,Matar Mushroom,1 katori - 100 g,1.8,0.0,5.1,0.0,2.9,1.3,42.0,2.01,54.0,MR
+food_0304,Coconut,100 g,3.3,0.0,6.0,0.0,33.0,9.0,47.0,2.82,354.0,R
+food_0305,Dessicated/dry coconut,100 g,6.9,0.0,7.3,0.0,64.5,16.3,47.0,3.431,660.0,R
+food_0306,Ghee (spoon),1 level teaspoon - 4 g,0.0,0.0,0.0,0.0,4.0,0.0,0.0,0.0,36.0,R
+food_0307,Ghee (g),1 g,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,9.0,R
+food_0308,Olive Oil (spoon),1 g,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,9.0,MR
+food_0309,Olive Oil (g),1 teaspoon - 4.5 g,0.0,0.0,0.0,0.0,4.5,0.0,0.0,0.0,40.5,MR
+food_0310,Mustard oil,1 teaspoon - 4.5 g,0.0,0.0,0.0,0.0,4.5,0.0,0.0,0.0,40.5,MR
+food_0311,Coconut Oil,1 teaspoon - 4.5 g,0.0,0.0,0.0,0.0,4.5,0.0,0.0,0.0,40.5,R
+food_0312,Almond Oil,1 teaspoon - 4.5 g,0.0,0.0,0.0,0.0,4.5,0.0,0.0,0.0,40.5,MR
+food_0313,Sesame Oil,1 teaspoon - 4.5 g,0.0,0.0,0.0,0.0,4.5,0.0,0.0,0.0,40.5,R
+food_0314,Butter - without salt,15 g,0.1,0.0,0.0,0.0,11.2,0.0,50.0,0.0,101.0,R
+food_0315,Butter - with salt,15 g,0.1,0.0,0.0,0.0,11.2,0.0,50.0,0.0,101.0,OR
+food_0316,Peanut butter,100 g,21.9,6.3,19.0,0.0,50.0,6.3,14.0,2.0,594.0,OR
+food_0317,Peanut butter,1 big spoon - 25 g,5.3,1.5,4.6,0.0,12.1,1.5,14.0,0.6,144.0,OR
+food_0318,Tahini,100 g,27.8,0.0,0.0,21.0,57.0,10.7,35.0,3.605,703.0,R
+food_0319,Almond butter,100 g,20.8,10.5,0.0,0.0,58.9,12.2,10.0,0.0,655.0,OR
+food_0320,Avocado,200 g (without skin & seed),3.9,3.8,3.8,0.0,30.7,13.6,40.0,1.5,333.8,R
+food_0321,Ghee (spoon) - with carbs,1 teaspoon - 4 g,0.0,0.0,0.0,4.0,0.0,0.0,0.0,0.0,36.0,NR
+food_0322,Ghee (g) - with carbs,1g,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,9.0,NR
+food_0323,Butter - with carbs,1 spoon - approx 15 g,0.1,0.0,0.0,11.2,0.0,0.0,50.0,0.0,101.0,NR
+food_0324,Peanut butter - with carbs,100 g,21.9,0.0,25.0,50.0,0.0,6.3,14.0,2.0,594.0,NR
+food_0325,Almond butter - with carbs,100 g,20.8,0.0,10.5,58.9,0.0,12.2,10.0,0.0,655.0,NR
+food_0326,Macadamia,10g,0.8,0.0,0.5,0.0,7.6,0.9,10.0,0.05,72.0,MR
+food_0327,Almonds,1 Piece - approx 1.2g,0.3,0.2,0.1,0.0,0.7,0.2,10.0,0.01,8.0,MR
+food_0328,Walnuts,1 Half Piece - approx 2g,0.3,0.2,0.0,0.0,1.4,0.2,20.0,0.04,14.0,R
+food_0329,Pistachio,1 Piece - approx 0.7g,0.1,0.1,0.0,0.0,0.4,0.1,18.0,0.02,4.0,MR
+food_0330,Pine nuts,5 Piece - approx 0.9g,0.1,0.3,0.0,0.0,0.4,0.0,15.0,0.05,5.0,MR
+food_0331,Cashews,1 Piece - approx 1.4g,0.3,0.1,0.2,0.0,0.7,0.1,22.0,0.04,8.0,MR
+food_0332,Hazelnuts,10 g - approx 7 pieces,1.5,0.0,0.7,0.0,6.1,0.97,2.5,0.0175,62.8,MR
+food_0333,Seeds Mix,1 tablespoon - approx 6g,1.2,0.6,0.6,0.0,3.2,0.6,25.0,0.15,40.0,MR
+food_0334,Seeds Mix Powder,10g - (CqmyOE resources),2.1,0.0,1.0,0.0,5.0,1.6,25.0,0.2,62.4,MR
+food_0335,Chia seeds,1 tablespoon - approx 6g,1.1,2.2,0.46,0.0,2.0,2.2,15.0,0.13,32.0,R
+food_0336,Sesame/til,1 tablespoon - approx 6g,1.1,0.0,0.7,0.0,3.0,0.7,2.1,0.2,34.4,R
+food_0337,Flax seeds,1 tablespoon - approx 6g,1.2,0.0,0.1,0.0,2.6,1.6,2.1,0.0,35.3,R
+food_0338,Poppy Seeds,10 g,1.8,0.0,0.8,0.0,4.2,2.0,9.8,0.0784,52.0,R
+food_0339,Almond Flour Roti,28g - 1 roti,7.8,2.1,2.4,0.0,13.0,2.1,1.0,0.0,192.0,OR
+food_0340,Coconut Flour Roti,28g - 1 roti,3.9199999999999995,10.08,5.88,0.0,3.9199999999999995,10.08,39.0,2.52,120.39999999999999,R
+food_0341,Walnut flour Roti,28g - 1 roti,4.0,2.0,4.0,0.0,18.0,2.0,1.0,0.0,202.0,OR
+food_0342,Flaxseed Roti,28g - 1 roti,6.7,0.6,8.4,0.0,14.2,0.6,1.0,0.0,190.6,MR
+food_0343,Soy flour Roti - non GMO,28g - 1 roti,13.2,4.0,6.0,1.0,0.0,4.0,25.0,2.5,101.8,MR
+food_0344,Chickpea flour Roti,28g - 1 roti,5.0,5.0,13.0,2.0,0.0,5.0,44.0,7.92,110.0,OR
+food_0345,Oat flour Roti,28g - 1 roti,5.0,2.0,18.0,2.0,0.0,2.0,44.0,8.8,118.0,OR
+food_0346,Rye flour Roti,28g - 1 roti,3.5,5.2,13.0,0.8,0.0,5.2,64.0,11.648,94.0,OR
+food_0347,Kuttu flour Roti (Buckwheat),28g - 1 roti,3.5,2.8,17.0,0.9,0.0,2.8,71.0,14.058,101.3,OR
+food_0348,Corn flour roti,28g - 1 roti,1.9,2.0,19.5,1.1,0.0,2.0,70.0,15.05,103.5,OR
+food_0349,Millet flour roti,28g - 1 roti,3.0,1.0,21.0,1.2,0.0,1.0,66.0,14.52,110.8,OR
+food_0350,Bajra roti,28g - 1 roti,3.0,1.0,21.0,1.2,0.0,1.0,66.0,14.52,110.8,OR
+food_0351,Whole wheat flour Roti,28g - 1 roti,3.8,4.1,16.9,0.5,0.0,4.1,69.0,14.49,103.7,OR
+food_0352,Wheat flour,100 gm (dry weight),10.0,0.0,67.0,3.0,0.0,10.0,75.0,50.25,400.0,NR
+food_0353,Quinoa flour Roti,28g - 1 roti,3.8,1.0,17.0,1.6,0.0,1.0,53.0,9.54,101.6,OR
+food_0354,Sorghum(chara) flour,28g - 1 roti,2.0,6.0,17.0,1.0,0.0,6.0,66.0,15.18,109.0,OR
+food_0355,Refined wheat(Maida) flour Roti,28g - 1 roti,2.7,1.0,20.0,0.4,0.0,1.0,85.0,17.85,98.4,OR
+food_0356,Barley (Jau/ Jawar) Flour Roti,28g - 1 roti,2.9,3.0,18.0,0.4,0.0,3.0,60.0,12.6,99.2,OR
+food_0357,Brown rice flour Roti,28g - 1 roti,2.0,1.4,20.0,0.8,0.0,1.4,62.0,13.268,100.8,OR
+food_0358,Sooji (semolina) Flour Roti,28g - 1 roti,2.4,1.0,21.0,0.5,0.0,1.0,59.0,12.98,102.1,OR
+food_0359,White rice (dhaan) flour Roti,28g - 1 roti,1.7,0.9,21.5,0.4,0.0,0.9,72.0,16.128,100.0,OR
+food_0360,Ragi/Mandhwa (finger millet) flour,28g - 1 roti,3.3,1.3,21.0,1.3,0.0,1.3,68.0,15.164,114.1,OR
+food_0361,Rusk,1 Piece - 10 g,0.7,0.0,5.0,1.1,0.0,0.3,70.0,4.0,33.0,NR
+food_0362,Biscuit,1 piece - 10 g,0.5,0.0,3.9,3.1,0.0,0.1,73.0,4.2,45.0,NR
+food_0363,Date (non sugar coated),1 medium - approx 16g,0.4,0.0,12.2,0.0,0.0,1.4,46.0,5.0,50.0,NR
+food_0364,Prune,1 Piece - approx 10 g,0.2,0.0,6.1,0.0,0.0,0.7,29.0,1.5,23.0,OR
+food_0365,Makhaana (Fox nut),10 g (Note: 1 handful is 5 g),1.0,0.0,7.7,0.0,0.0,1.5,62.0,4.0,35.0,OR
+food_0366,Raisin,1 Piece - approx 0.5 g,0.0,0.0,0.4,0.0,0.0,0.0,61.0,0.25,1.0,OR
+food_0367,Dried blueberry,1 Piece - approx 1 g,0.0,0.0,0.8,0.0,0.0,0.0,53.0,0.4,3.0,MR
+food_0368,Munakka,1 Piece - 0.8g,0.0,0.0,0.5,0.0,0.0,0.0,61.0,0.305,2.0,MR
+food_0369,Chicken (with skin and bone),100 g cooked,20.0,0.0,0.1,0.0,10.0,0.0,0.0,0.0,172.0,R
+food_0370,"Chicken (with skin, boneless )",100 g cooked,24.0,0.0,0.0,0.0,12.6,0.0,0.0,0.0,216.0,R
+food_0371,"Chicken ( skinless, with bone)",100 g cooked,27.7,0.0,0.0,0.0,6.0,0.0,0.0,0.0,130.0,MR
+food_0372,"Chicken (skinless, boneless)",100 g cooked,25.0,0.0,0.0,0.0,8.0,0.0,0.0,0.0,179.0,MR
+food_0373,"Chicken Breast (skinless, boneless)",1 small split - 105 g,32.5,0.0,0.0,0.0,4.7,0.0,0.0,0.0,182.0,MR
+food_0374,"Chicken Breast (with skin, boneless)",1 small split - 110 g,30.1,0.0,0.0,0.0,8.2,0.0,0.0,0.0,202.0,R
+food_0375,Chicken Thigh (with skin and bone),1 thigh - 62 g,14.4,0.0,0.0,0.0,9.1,0.0,0.0,0.0,144.0,R
+food_0376,"Chicken Thigh (skinless, boneless)",1 thigh - 52 g,12.5,0.0,0.0,0.0,4.2,0.0,0.0,0.0,93.0,MR
+food_0377,Chicken wings (with skin and bone),1 wing - 34 g,8.1,0.0,0.0,0.0,5.7,0.0,0.0,0.0,86.0,R
+food_0378,"Chicken wings (skinless, boneless)",1 wing - 21 g,6.4,0.0,0.0,0.0,1.7,0.0,0.0,0.0,43.0,MR
+food_0379,Chicken Broth,1 cup - 240 g,5.3,0.0,0.9,0.0,2.9,0.0,0.0,0.0,52.0,R
+food_0380,Chicken Vegetable stew,1 cup - 252 g,17.9,8.0,4.2,0.0,4.3,3.8,42.0,1.8,152.0,MR
+food_0381,Bacon slice,1 Slice - 8g,2.7,0.0,0.1,0.0,2.7,0.0,20.0,0.03,37.0,R
+food_0382,Chicken Seekh kebab,1 kebab - 71 g,12.0,0.0,2.0,0.0,8.0,0.0,45.0,0.0,135.0,MR
+food_0383,Chicken Tikka,25 g,6.2,0.0,0.0,0.0,2.1,0.0,0.0,0.0,46.5,MR
+food_0384,Chicken salami,1 slice - 20 g,1.9,0.0,1.2,0.0,3.5,0.0,38.0,0.45,47.0,MR
+food_0385,Chicken Liver,100 g,16.9,0.0,0.73,0.0,4.83,0.0,0.0,0.0,119.0,R
+food_0386,Bacon (g),50 g,17.0,0.0,0.9,0.0,17.5,0.0,20.0,0.2,234.0,MR
+food_0387,Fish - Raw,100 g,16.8,0.0,0.0,0.0,9.45,0.0,0.0,0.0,162.75,R
+food_0388,Fish - Cooked,100 g,22.4,0.0,0.0,0.0,12.6,0.0,0.0,0.0,217.0,R
+food_0389,Fish Roe/Eggs,100 g cooked,28.6,0.0,1.9,0.0,8.23,0.0,0.0,0.0,204.0,R
+food_0390,Dry Fish,35 g,5.6,0.0,0.0,0.0,3.2,0.0,0.0,0.0,54.3,R
+food_0391,Prawns /Shrimp,100 g cooked,24.0,0.0,0.2,0.0,0.3,0.0,0.0,0.0,99.0,R
+food_0392,Pork - Fat,100 g cooked,6.3,0.0,0.0,0.0,67.7,0.0,0.0,0.0,638.0,R
+food_0393,Pork chops,100 g cooked,26.2,0.0,0.0,0.0,11.0,0.0,0.0,0.0,209.0,R
+food_0394,Pork belly,100g cooked,8.9,0.0,0.0,0.0,52.7,0.0,0.0,0.0,518.0,R
+food_0395,Pork meat with fat,100g cooked,16.5,0.0,0.0,0.0,21.5,0.0,0.0,0.0,390.0,R
+food_0396,Beef,100g cooked,22.0,0.0,0.0,0.0,10.9,0.0,0.0,0.0,181.0,R
+food_0397,Mutton/Lamb - Cooked,100 g,24.5,0.0,0.0,0.0,20.9,0.0,0.0,0.0,294.0,R
+food_0398,Mutton/ Lamb - Raw,100 g,16.6,0.0,0.0,0.0,23.4,0.0,0.0,0.0,282.0,R
+food_0399,Paya Soup,100 g,9.0,0.0,3.1,0.0,5.2,1.0,10.0,0.31,95.0,R
+food_0400,Crab Cooked (Hardshell),100 g,17.9,0.0,0.0,0.0,0.7,0.0,0.0,0.0,83.0,R
+food_0401,Eggs Boiled,1 egg - approx 50 g,6.3,0.0,0.36,0.0,5.3,0.0,0.0,0.0,77.0,R
+food_0402,Egg White,1 egg white - 33 g,3.6,0.0,0.3,0.0,0.1,0.0,0.0,0.0,17.0,R
+food_0403,Egg Yellow,1 egg yellow - 17 g,2.7,0.0,0.3,0.0,5.0,0.0,0.0,0.0,55.0,R
+food_0404,Egg Omelette,1 egg omelette,6.0,0.0,0.36,0.0,8.0,0.0,0.0,0.0,104.0,R
+food_0405,Egg Bread Omelette,1 egg - 1 bread,11.0,0.0,21.0,8.4,0.0,1.0,63.0,11.0,312.0,NR
+food_0406,Egg Bhurji,1 egg - aprrox 50 g,7.4,0.0,4.8,0.0,10.0,1.3,0.0,0.0,140.0,R
+food_0407,Egg sunny side up,1 egg - approx 50 g,6.3,0.0,0.6,0.0,7.0,0.0,0.0,0.0,77.0,R
+food_0408,Whey lean protein,1 scoop - 30 g,25.0,0.0,2.0,0.0,1.0,0.0,87.0,1.7,116.0,NR
+food_0409,Psyllium husk/Isabgol,5 g (dry),0.0,0.0,0.6,0.0,0.0,3.85,0.0,0.0,2.4,MR
+food_0410,Collagen,10g,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,36.0,R
+food_0411,Strawberry (g),100 g,0.7,0.0,9.8,0.2,0.0,2.3,40.0,3.0,44.0,MR
+food_0412,Strawberry (pieces),1 medium - 12 g,0.1,0.0,1.2,0.0,0.0,0.3,40.0,0.36,5.0,MR
+food_0413,Mulberry (g),100 g,1.1,0.0,10.3,0.4,0.0,1.7,25.0,2.0,49.0,MR
+food_0414,Mulberry (piece),1 fruit - 1.5 g,0.0,0.0,0.2,0.0,0.0,0.0,25.0,0.05,1.0,MR
+food_0415,Raspberry (g),100 g,1.0,0.0,11.7,0.6,0.0,6.5,26.0,1.5,56.0,MR
+food_0416,Raspberry (piece),1 Piece - 2g,0.0,0.0,0.2,0.0,0.0,0.1,26.0,0.03,1.0,MR
+food_0417,Plum (g),100 g,0.7,0.0,11.1,0.5,0.0,2.8,39.0,3.5,52.0,MR
+food_0418,Plum (piece),1 fruit - 66 g,0.5,0.0,7.3,0.3,0.0,1.9,39.0,2.1,34.0,MR
+food_0419,Blueberry (g),100 g,0.7,0.0,14.5,0.3,0.0,2.4,53.0,6.5,57.0,MR
+food_0420,Blueberry (piece),1 Piece - 1.4g,0.0,0.0,0.2,0.0,0.0,0.0,53.0,0.1,1.0,MR
+food_0421,Mango (g),100 g,0.6,0.0,16.9,0.4,0.0,2.0,55.0,9.0,74.0,OR
+food_0422,Mango (fruit),1 medium - approx 160 g,1.0,0.0,27.9,0.7,0.0,3.3,56.0,15.624,120.0,OR
+food_0423,Raw Mango / Kairi,100 g,1.0,0.0,15.0,0.4,0.0,1.6,50.0,7.5,60.0,MR
+food_0424,Jamun (fruit),1 piece,0.2,0.0,3.1,0.1,0.0,1.1,25.0,0.775,19.0,MR
+food_0425,Wild Fruit,100 g,2.3,0.0,16.0,1.0,0.0,7.2,40.0,6.2,82.0,MR
+food_0426,Raw Figs,1 small - 30 g,0.3,0.0,7.7,0.0,0.0,1.2,35.0,2.695,30.0,OR
+food_0427,Mixed/generic fruits,100 g,0.6,0.0,10.6,0.0,0.0,1.8,55.0,5.8,47.1,OR
+food_0428,Guava (g),100 g,2.6,0.0,14.3,1.0,0.0,5.4,65.0,5.5,68.0,MR
+food_0429,Guava (fruit),1 medium - approx 70 g,1.8,0.0,10.0,0.7,0.0,3.8,65.0,4.0,48.0,MR
+food_0430,Melon Fruit (g),100 g,0.3,0.0,3.5,0.2,0.0,0.8,70.0,2.0,17.0,MR
+food_0431,Melon Fruit (cup),1 cup - approx 160 g,0.5,0.0,5.6,0.3,0.0,1.3,70.0,3.5,27.0,MR
+food_0432,Watermelon (g),100 g,0.2,0.0,3.3,0.2,0.0,0.6,72.0,4.0,16.0,MR
+food_0433,Watermelon (cup),1 cup - approx 150 g,0.3,0.0,5.0,0.3,0.0,0.9,72.0,6.0,24.0,MR
+food_0434,Banana,1 medium piece - approx 100 g,1.2,0.0,27.2,0.3,0.0,1.8,52.0,17.0,116.0,OR
+food_0435,Apple (g),100 g,0.2,0.0,13.4,0.5,0.0,3.2,40.0,4.0,59.0,OR
+food_0436,Apple (fruit),1 medium - approx 180 g,0.4,0.0,24.4,0.9,0.0,5.8,40.0,7.0,107.0,OR
+food_0437,Cheeku / Chiku  (g),100 g,0.7,0.0,21.4,1.1,0.0,10.9,37.0,4.0,98.0,MR
+food_0438,Cheeku / Chiku (fruit),1 fruit - approx 60 g,0.4,0.0,12.8,0.7,0.0,6.5,37.0,2.0,59.0,MR
+food_0439,Litchi / Lychee (g),100 g,0.8,0.0,16.5,0.4,0.0,1.3,50.0,8.0,66.0,OR
+food_0440,Litchi / Lychee (fruit),1 fruit - 10 g,0.1,0.0,1.6,0.1,0.0,0.1,50.0,0.8,6.0,OR
+food_0441,Figs / Anjeer (fruit),1 medium - 50 g,0.7,0.0,2.0,0.1,0.0,2.5,51.0,1.0,19.0,OR
+food_0442,Figs / Anjeer (dried),9 g,0.3,0.0,4.8,0.1,0.0,0.8,62.0,2.2,21.0,OR
+food_0443,Cherry (fruit),1 medium - 8.2g,0.1,0.0,1.1,0.0,0.0,0.2,22.0,0.23,5.0,OR
+food_0444,Orange (g),100 g,0.7,0.0,10.9,0.2,0.0,1.1,42.0,4.0,48.0,OR
+food_0445,Orange (fruit),1 medium - 130 g,0.9,0.0,14.3,0.3,0.0,1.5,42.0,5.5,63.0,OR
+food_0446,Papaya (g),100 g,0.6,0.0,7.2,0.1,0.0,2.6,60.0,7.0,32.0,OR
+food_0447,Papaya (cup),1 cup - approx 150 g,0.9,0.0,10.4,0.2,0.0,3.8,60.0,10.0,46.0,OR
+food_0448,Pineapple (g),100 g,0.4,0.0,10.8,0.1,0.0,2.8,66.0,6.0,46.0,OR
+food_0449,Pineapple (cup),1 cup - approx 160 g,0.7,0.0,17.8,0.2,0.0,4.6,66.0,9.0,76.0,OR
+food_0450,Pear (g),100 g,0.4,0.0,15.5,0.1,0.0,3.1,38.0,4.0,58.0,OR
+food_0451,Pear (fruit),1 medium - approx 180 g,0.7,0.0,27.5,0.2,0.0,5.5,38.0,8.0,103.0,OR
+food_0452,Kiwi (fruit),1 fruit - approx 150 g,1.6,0.0,20.2,0.7,0.0,4.1,50.0,8.0,84.0,OR
+food_0453,Pomegranate (g),100 g,1.7,0.0,18.7,1.2,0.0,4.0,67.0,7.4,83.0,MR
+food_0454,Pomegranate (cup),1 cup - approx 180 g,2.9,0.0,32.5,2.0,0.0,7.0,67.0,13.32,144.0,MR
+food_0455,Custard apple (g),100 g,2.1,0.0,23.6,0.0,0.0,4.4,54.0,10.0,94.0,OR
+food_0456,Custard apple (fruit),1 fruit - approx 170 g,3.5,0.0,40.1,0.0,0.0,7.5,54.0,18.0,160.0,OR
+food_0457,Indian Jujube (Ber),1 fruit - approx 17 g,0.1,0.0,2.8,0.1,0.0,0.6,20.0,0.4,12.0,MR
+food_0458,Grapes / angoor (g),100 g,0.5,0.0,16.5,0.3,0.0,1.2,53.0,8.1,71.0,OR
+food_0459,Grapes /angoor (piece),1 Piece - approx 5 g,0.0,0.0,0.8,0.0,0.0,0.1,53.0,0.4,3.0,OR
+food_0460,Blackberry,100 g,1.4,0.0,4.3,0.0,0.0,5.3,25.0,1.075,43.0,OR
+food_0461,Ice apple/Tadgola,40 g,0.32,0.0,4.4,0.0,0.0,0.4,52.0,2.28,17.2,OR
+food_0462,Mulberry,100 g,1.4,0.0,8.3,0.4,0.0,1.7,25.0,2.075,43.0,OR
+food_0463,Dragonfruit,100 g,0.36,0.0,12.0,0.14,0.0,3.0,50.0,6.0,57.0,OR
+food_0464,Dark Chocolate 95%,10 g,1.3,0.0,1.5,4.8,0.0,2.5,20.0,0.7,62.0,OR
+food_0465,Dark Chocolate 75%,10 g,0.8,0.0,3.7,4.0,0.0,1.1,2.3,0.8,57.0,NR
+food_0466,Dark Chocolate 55%,10 g,0.6,0.0,5.73,3.37,0.0,0.0,40.0,3.0379,55.7,NR
+food_0467,Milk Chocolate,10 g,0.76,0.0,5.6,1.84,0.0,0.0,51.0,2.856,52.8,NR
+food_0468,Cocoa Powder (unsweetened),100g,19.6,0.0,21.0,13.7,0.0,37.0,20.0,4.2,228.0,MR
+food_0469,Toffee,1 Piece - 7g,0.3,0.0,4.8,1.3,0.0,0.0,51.0,2.5,31.9,NR
+food_0470,Candy,1 Piece - 7g,0.0,0.0,7.0,1.3,0.0,0.0,65.0,4.55,31.9,NR
+food_0471,Mawa til ladoo,1 piece - 60 g,5.0,0.0,32.8,12.6,0.0,0.6,82.0,26.896,262.0,NR
+food_0472,Indian sweet (Mithai),1 Piece approx 30 g,3.5,0.0,12.5,5.2,0.0,0.0,80.0,10.0,109.0,NR
+food_0473,Ice cream without sugar,50 g,1.6,0.0,8.0,6.4,0.0,2.4,49.0,3.1,96.0,OR
+food_0474,Ice Cream,1 scoop - approx 60.0 g,1.4,0.0,14.3,12.7,0.0,0.0,57.0,7.0,173.0,NR
+food_0475,Kheer without Sugar,1 katori - 150 g,8.8,0.0,24.9,12.5,0.0,0.5,53.0,12.3,243.0,OR
+food_0476,Kheer with Sugar,1 katori - 150 g,7.4,0.0,45.2,11.2,0.0,0.4,66.0,26.0,304.0,NR
+food_0477,Cheesecake,1 slice - 40 g,4.9,0.0,13.7,5.7,0.0,0.1,76.0,10.41,123.0,NR
+food_0478,Gajak / layee / lai / maroonda,1 medium piece - 16 g,0.6,0.0,9.6,1.6,0.0,0.6,82.0,7.2,54.0,NR
+food_0479,Croissant,1 croissant,3.9,0.0,21.5,14.6,0.0,2.9,88.0,15.75,232.0,NR
+food_0480,Gajar Halwa with sugar,1 katori - 150 g,4.2,0.0,32.1,8.0,0.0,3.9,65.0,17.0,194.0,NR
+food_0481,Gajar Halwa without sugar,1 katori - 150 g,4.2,0.0,14.7,8.0,0.0,3.8,65.0,6.6,151.0,OR
+food_0482,Moong/Mung dal halwa,1 katori - 150 g,6.4,0.0,30.0,15.0,0.0,2.1,74.0,22.2,252.0,NR
+food_0483,Sooji (Suji) Halwa,1 katori - 150 g,2.3,0.0,35.1,17.0,0.0,0.9,82.0,28.0,294.0,NR
+food_0484,Cake Slice / Pastry,1 Slice - approx 60.0 g,3.6,0.0,26.5,13.1,0.0,0.6,82.0,21.0,235.0,NR
+food_0485,Chocolate Brownie,1 Piece - 40 g,2.6,0.0,22.9,7.0,0.0,0.7,85.0,17.85,162.0,NR
+food_0486,Cold drink / Soft drink - Regular,1 glass - 250.0 ml,0.0,0.0,32.5,0.0,0.0,0.0,53.0,17.0,130.0,NR
+food_0487,Diet coke / soft drink,1 glass - 250 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,NR
+food_0488,Fruit Juice,1 glass - 250.0 ml,0.4,0.0,27.0,0.0,0.0,0.0,60.0,18.0,115.0,NR
+food_0489,Carrot Juice,1 glass - 250.0 ml,2.2,0.0,15.0,0.3,0.0,1.0,45.0,14.1,94.0,NR
+food_0490,Juice box - packaged,100 ml,0.0,0.0,15.6,0.0,0.0,0.0,60.0,9.36,63.0,NR
+food_0491,Ketchup / Sauce,1 teaspoon - approx 10 g,0.0,0.0,3.0,0.0,0.0,0.0,55.0,1.6,12.0,NR
+food_0492,Gatorade,250 g bottle,0.0,0.0,15.0,0.0,0.0,0.0,89.0,13.0,60.0,NR
+food_0493,Pop Corn - Plain,25 g,2.0,0.0,11.3,1.3,0.0,2.5,55.0,6.2,123.3,NR
+food_0494,Pop Corn - Butter,25 g,2.0,0.0,11.3,7.3,0.0,2.5,55.0,6.2,123.3,NR
+food_0495,French Fries,Small Serving 70 g,2.0,0.0,37.0,10.0,0.0,1.5,63.0,23.31,260.0,NR
+food_0496,Red wine,100 ml,0.1,0.0,3.0,0.0,0.0,0.0,62.0,1.4,85.0,NR
+food_0497,White wine,100 ml,0.1,0.0,2.6,0.0,0.0,0.0,64.0,1.4,82.0,NR
+food_0498,Gin,30 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,65.0,NR
+food_0499,Whisky,30 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,66.0,NR
+food_0500,Vodka,30 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,66.0,NR
+food_0501,Beer,330 ml,0.0,0.0,13.0,0.0,0.0,0.0,100.0,7.5,154.0,NR
+food_0502,Pet-CC,100g,17.0,0.0,0.0,0.0,8.5,0.0,0.0,0.0,145.0,R
+food_0503,Pet-CS,100g,8.2,0.0,0.0,0.0,38.0,0.0,0.0,0.0,375.0,R
+food_0504,Almond butter - with carbs,100 g,20.8,0.0,10.5,58.9,0.0,12.2,10.0,0.0,655.0,NR
+food_0505,Peanut butter - with carbs,100 g,21.9,0.0,25.0,50.0,0.0,6.3,14.0,2.0,594.0,NR
+food_0506,Bread Pakoda,1 Half-Bread Slice,5.3,0.0,24.8,17.9,0.0,4.4,85.0,17.0,282.0,NR
+food_0507,Sooji (Suji) Halwa,1 katori - 150 g,2.3,0.0,35.1,17.0,0.0,0.9,82.0,28.0,294.0,NR
+food_0508,Bhatura / Batura,1 Piece - 100 g,5.6,0.0,32.9,16.8,0.0,1.2,85.0,27.0,307.0,NR
+food_0509,Samosa,1 Samosa - 100 g,4.0,0.0,30.1,15.3,0.0,1.8,85.0,24.055,276.0,NR
+food_0510,Moong/Mung dal halwa,1 katori - 150 g,6.4,0.0,30.0,15.0,0.0,2.1,74.0,22.2,252.0,NR
+food_0511,Croissant,1 croissant,3.9,0.0,21.5,14.6,0.0,2.9,88.0,15.75,232.0,NR
+food_0512,Khasta Kachori,1 piece - 50 g,3.0,0.0,15.1,14.0,0.0,1.2,85.0,12.0,199.0,NR
+food_0513,Paneer Parantha,1 parantha - 80 g,10.1,0.0,15.9,13.7,0.0,2.4,78.0,11.0,226.0,NR
+food_0514,Cake Slice / Pastry,1 Slice - approx 60.0 g,3.6,0.0,26.5,13.1,0.0,0.6,82.0,21.0,235.0,NR
+food_0515,Burger,1 Burger - approx 250 g,8.9,0.0,59.5,13.0,0.0,4.1,66.0,39.27,384.0,NR
+food_0516,Ice Cream,1 scoop - approx 60.0 g,1.4,0.0,14.3,12.7,0.0,0.0,57.0,7.0,173.0,NR
+food_0517,Mawa til ladoo,1 piece - 60 g,5.0,0.0,32.8,12.6,0.0,0.6,82.0,26.896,262.0,NR
+food_0518,Spring Rolls,1 Piece - approx 70 g,2.5,0.0,19.4,12.2,0.0,1.3,60.0,11.0,200.0,NR
+food_0519,Butter - with carbs,1 spoon - approx 15 g,0.1,0.0,0.0,11.2,0.0,0.0,50.0,0.0,101.0,NR
+food_0520,Kheer with Sugar,1 katori - 150 g,7.4,0.0,45.2,11.2,0.0,0.4,66.0,26.0,304.0,NR
+food_0521,Sandwich (mayo and veggies),1 sandwich,12.0,0.0,26.2,11.0,0.0,1.5,81.0,21.0,257.0,NR
+food_0522,Chicken Roll / Chicken keema roll,1 roll - 140 g,16.2,0.0,28.1,10.3,0.0,1.8,81.0,20.1,266.0,NR
+food_0523,Hash browns (Aloo tikki),1 piece - 100 g,2.5,0.0,25.4,10.0,0.0,11.0,76.0,11.0,205.0,NR
+food_0524,French Fries,Small Serving 70 g,2.0,0.0,37.0,10.0,0.0,1.5,63.0,23.31,260.0,NR
+food_0525,Bread - multigrain,1 Slice - approx 20 g,1.92,0.0,8.1,8.6,0.0,1.3,70.0,5.67,53.0,NR
+food_0526,Egg Bread Omelette,1 egg - 1 bread,11.0,0.0,21.0,8.4,0.0,1.0,63.0,11.0,312.0,NR
+food_0527,Vada/Wada - potato,1 vada - approx 50 g,2.3,0.0,11.2,8.3,0.0,1.4,82.0,8.0,128.0,NR
+food_0528,Lassi - Sweet (2 tsp sugar),1 glass - 250 ml,6.4,0.0,25.3,8.3,0.0,0.1,82.0,20.1,198.0,NR
+food_0529,Soya nuggets - sabzi,1 katori - 200 g,20.0,0.0,14.0,8.0,0.0,5.0,26.0,2.2,150.0,NR
+food_0530,Gajar Halwa with sugar,1 katori - 150 g,4.2,0.0,32.1,8.0,0.0,3.9,65.0,17.0,194.0,NR
+food_0531,Pop Corn - Butter,25 g,2.0,0.0,11.3,7.3,0.0,2.5,55.0,6.2,123.3,NR
+food_0532,Sabudana / Sago - Khichdi,1 katori - 100 g,2.7,0.0,25.4,7.2,0.0,1.7,70.0,16.5,176.0,NR
+food_0533,Oats,Uncooked 100 g,17.0,0.0,56.0,7.0,0.0,10.0,55.0,30.8,389.0,NR
+food_0534,Chocolate Brownie,1 Piece - 40 g,2.6,0.0,22.9,7.0,0.0,0.7,85.0,17.85,162.0,NR
+food_0535,Poori / Puri,1 regular - 50 g,4.0,0.0,23.1,6.6,0.0,3.6,82.0,16.0,167.0,NR
+food_0536,Cheese with carb,25 g cheese,5.0,0.0,0.4,6.5,0.0,0.0,34.0,1.4,80.0,NR
+food_0537,Vermicelli / Jave - plain,1 bowl - 235 g,5.4,0.0,37.0,6.4,0.0,2.9,67.0,24.79,233.0,NR
+food_0538,Aaloo /Alu Parantha,1 Parantha - 100 g,4.8,0.0,32.1,6.3,0.0,4.5,76.0,19.8,203.0,NR
+food_0539,Gobi/Cauflower Parantha,Parantha - 80 g,4.1,0.0,20.9,6.1,0.0,4.0,74.0,12.51,154.0,NR
+food_0540,Mooli /Muli Parantha,1 Parantha - 80 g,3.9,0.0,21.8,6.0,0.0,3.8,75.0,14.1,156.0,NR
+food_0541,"Oats Porridge with milk, unsweetened",1 katori - 130 g,6.2,0.0,16.7,6.0,0.0,2.0,54.0,7.6,140.0,NR
+food_0542,Cheesecake,1 slice - 40 g,4.9,0.0,13.7,5.7,0.0,0.1,76.0,10.41,123.0,NR
+food_0543,Vegetable Parantha,1 parantha - 80 g,3.6,0.0,17.9,5.4,0.0,3.7,71.0,10.9,148.0,NR
+food_0544,Aloo /Potato Sabzi,1 Katori - 100 g,2.2,3.5,21.8,5.2,0.0,3.5,80.0,17.44,142.0,NR
+food_0545,Indian sweet (Mithai),1 Piece approx 30 g,3.5,0.0,12.5,5.2,0.0,0.0,80.0,10.0,109.0,NR
+food_0546,Methi Parantha,1 Parantha - 60 g,4.3,0.0,22.5,5.1,0.0,4.0,73.0,14.24,153.0,NR
+food_0547,Baati / bati,1 Baati - 30 g,1.8,0.0,9.0,5.0,0.0,1.6,67.0,6.1,94.0,NR
+food_0548,Baked beans,100 g,6.0,0.0,22.0,5.0,0.0,6.0,57.0,9.12,155.0,NR
+food_0549,"Pizza slice (Medium, thick crust)",70 g,7.7,0.0,28.0,4.9,0.0,1.3,80.0,24.3,186.0,NR
+food_0550,Chips,10 chips - 12 g,1.0,0.0,6.7,4.8,0.0,0.6,54.0,3.0,74.0,NR
+food_0551,"Pizza slice (Medium, thin crust)",50 g,6.0,0.0,16.6,4.7,0.0,0.8,80.0,13.28,132.0,NR
+food_0552,Choorma / churma,1 tablespoon - 14 g,0.9,0.0,5.4,4.7,0.0,0.7,78.0,3.67,68.0,NR
+food_0553,Naan,1 Piece - approx 50 g,3.7,0.0,22.9,4.6,0.0,1.3,85.0,18.0,149.0,NR
+food_0554,Aloo Tikki /Alu Tikki,1 tikki,0.7,0.0,10.2,4.6,0.0,0.8,77.0,7.0,84.0,NR
+food_0555,Matthi / Mathiya,1 Piece - 25 g,1.5,0.0,11.1,4.5,0.0,1.8,84.0,7.5,90.0,NR
+food_0556,Aloo Beans - Sabzi,1 katori - 100 g,1.8,0.0,12.0,4.3,0.0,2.6,62.0,5.8,93.0,NR
+food_0557,Plain Parantha,1 Parantha - 50 g,4.2,0.0,23.9,4.2,0.0,3.7,77.0,15.0,140.0,NR
+food_0558,Bhel Puri,1 Katori - 45 g,2.4,0.0,11.4,4.2,0.0,1.3,61.0,6.1,92.0,NR
+food_0559,Noodles,1 bowl / katori - approx 100 g,3.4,0.0,21.4,4.1,0.0,1.2,85.0,17.0,136.0,NR
+food_0560,Ghee (spoon) - with carbs,1 teaspoon - 4 g,0.0,0.0,0.0,4.0,0.0,0.0,0.0,0.0,36.0,NR
+food_0561,Dark Chocolate 75%,10 g,0.8,0.0,3.7,4.0,0.0,1.1,2.3,0.8,57.0,NR
+food_0562,Dalia - Sweet,1 katori - 130 g,3.0,0.0,22.0,3.8,0.0,2.6,69.0,15.18,146.0,NR
+food_0563,Dark Chocolate 55%,10 g,0.6,0.0,5.73,3.37,0.0,0.0,40.0,3.0379,55.7,NR
+food_0564,Biscuit,1 piece - 10 g,0.5,0.0,3.9,3.1,0.0,0.1,73.0,4.2,45.0,NR
+food_0565,Namkeen/farsan/mixture,1 teaspoon - approx 7g,0.9,0.0,3.2,2.7,0.0,0.1,56.0,2.0,39.0,NR
+food_0566,Samak rice / Barnyard Millet,Cooked 1 katori - 124 g,2.2,0.0,18.4,2.6,0.0,2.5,52.0,8.26,105.0,NR
+food_0567,Dhokla,1 Dhokla - approx 35 g,2.4,0.0,5.6,2.4,0.0,1.0,35.0,2.0,54.0,NR
+food_0568,Sweet corn,1 cup - approx 145 g,4.8,0.0,27.1,2.0,0.0,2.9,52.0,13.0,125.0,NR
+food_0569,Chicken Momo,1 piece - 38g,3.5,0.0,12.8,2.0,0.0,0.6,58.0,6.0,88.0,NR
+food_0570,Milk Chocolate,10 g,0.76,0.0,5.6,1.84,0.0,0.0,51.0,2.856,52.8,NR
+food_0571,Golgappe / Pani puri,1 piece,0.5,0.0,4.0,1.8,0.0,0.3,70.0,3.0,35.0,NR
+food_0572,Pasta,1 cup - approx 140 g,8.0,0.0,41.0,1.7,0.0,2.5,48.0,19.1,221.0,NR
+food_0573,Gajak / layee / lai / maroonda,1 medium piece - 16 g,0.6,0.0,9.6,1.6,0.0,0.6,82.0,7.2,54.0,NR
+food_0574,Poha / Flattened RIce / Chura,Raw 1 katori - 100 g,2.6,0.0,26.9,1.5,0.0,1.1,75.0,20.0,130.0,NR
+food_0575,Namak Para / Pare,1 para - 5 g,0.3,0.0,2.3,1.3,0.0,0.1,84.0,1.76,22.0,NR
+food_0576,Toffee,1 Piece - 7g,0.3,0.0,4.8,1.3,0.0,0.0,51.0,2.5,31.9,NR
+food_0577,Candy,1 Piece - 7g,0.0,0.0,7.0,1.3,0.0,0.0,65.0,4.55,31.9,NR
+food_0578,Pop Corn - Plain,25 g,2.0,0.0,11.3,1.3,0.0,2.5,55.0,6.2,123.3,NR
+food_0579,Veg momo,1 piece - 36g,1.3,0.0,8.5,1.1,0.0,1.1,62.0,5.0,49.0,NR
+food_0580,Rusk,1 Piece - 10 g,0.7,0.0,5.0,1.1,0.0,0.3,70.0,4.0,33.0,NR
+food_0581,Ghee (g) - with carbs,1g,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,9.0,NR
+food_0582,Corn Flakes,Raw 1 cup - 35 g,1.8,0.0,30.3,0.3,0.0,1.5,81.0,25.0,131.0,NR
+food_0583,Carrot Juice,1 glass - 250.0 ml,2.2,0.0,15.0,0.3,0.0,1.0,45.0,14.1,94.0,NR
+food_0584,Bread - white,1 Slice - approx 20 g,1.7,0.0,11.4,0.2,0.0,0.5,90.0,10.26,54.0,NR
+food_0585,Sabudana / Sago,Dry half cup - 75 g,0.15,0.0,66.0,0.15,0.0,0.7,67.0,42.0,267.0,NR
+food_0586,Sweet Potato/ Yam,1 medium - 151 g,2.1,0.0,26.9,0.1,0.0,4.0,51.0,11.2,115.0,NR
+food_0587,Murmura / Puffed Rice (bowl),1 katori - 10 g,0.7,0.0,6.6,0.0,0.0,0.2,73.0,4.5,29.0,NR
+food_0588,Chicken Sausage - Preservative,1 medium - approx 35 g,5.8,0.0,0.4,0.0,4.2,0.0,28.0,0.1,63.0,NR
+food_0589,Boiled Potato,100 g,2.2,3.5,21.8,0.0,0.0,3.5,80.0,17.44,72.0,NR
+food_0590,Sugar - Granulated,1 teaspoon - 8gm,0.0,0.0,8.0,0.0,0.0,0.0,63.0,5.04,31.0,NR
+food_0591,Sugar cube,4 g,0.0,0.0,4.0,0.0,0.0,0.0,63.0,2.52,15.0,NR
+food_0592,Jaggery Powder,1 teaspoon - approx 6.5 g,0.0,0.0,6.0,0.0,0.0,0.0,85.0,5.1,31.0,NR
+food_0593,Honey (spoon),1 teaspoon - approx 10 g,0.0,0.0,8.0,0.0,0.0,0.0,60.0,5.0,32.0,NR
+food_0594,Honey (g),1g,0.0,0.0,0.8,0.0,0.0,0.0,60.0,0.5,3.0,NR
+food_0595,Yakult - Red,1 bottle - 80 ml,1.0,0.0,12.0,0.0,0.0,0.0,81.0,8.3,50.0,NR
+food_0596,Yakult - Blue (light),1 bottle - 80 ml,1.0,0.0,6.0,0.0,0.0,2.0,77.0,4.3,25.0,NR
+food_0597,Coconut milk - packaged,1 glass - 250 ml,1.5,0.0,2.0,0.0,18.0,0.0,52.0,1.6,180.0,NR
+food_0598,Tamarind-jaggery Meetha Chutney,1 spoon 15 g,0.0,0.0,5.4,0.0,0.0,0.5,53.0,2.862,21.0,NR
+food_0599,Date (non sugar coated),1 medium - approx 16g,0.4,0.0,12.2,0.0,0.0,1.4,46.0,5.0,50.0,NR
+food_0600,Whey lean protein,1 scoop - 30 g,25.0,0.0,2.0,0.0,1.0,0.0,87.0,1.7,116.0,NR
+food_0601,Cold drink / Soft drink - Regular,1 glass - 250.0 ml,0.0,0.0,32.5,0.0,0.0,0.0,53.0,17.0,130.0,NR
+food_0602,Diet coke / soft drink,1 glass - 250 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,NR
+food_0603,Fruit Juice,1 glass - 250.0 ml,0.4,0.0,27.0,0.0,0.0,0.0,60.0,18.0,115.0,NR
+food_0604,Juice box - packaged,100 ml,0.0,0.0,15.6,0.0,0.0,0.0,60.0,9.36,63.0,NR
+food_0605,Gatorade,250 g bottle,0.0,0.0,15.0,0.0,0.0,0.0,89.0,13.0,60.0,NR
+food_0606,Red wine,100 ml,0.1,0.0,3.0,0.0,0.0,0.0,62.0,1.4,85.0,NR
+food_0607,White wine,100 ml,0.1,0.0,2.6,0.0,0.0,0.0,64.0,1.4,82.0,NR
+food_0608,Gin,30 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,65.0,NR
+food_0609,Whisky,30 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,66.0,NR
+food_0610,Vodka,30 ml,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,66.0,NR
+food_0611,Beer,330 ml,0.0,0.0,13.0,0.0,0.0,0.0,100.0,7.5,154.0,NR
