@@ -1,438 +1,2555 @@
-:root{
-  --navy:#101820; --chalk:#F5F3EE; --cobalt:#2A5DFF; --lime:#C4F135; --coral:#FF5A4E;
-  --slate:#6B7280; --border-light:#EDEAE2; --input-border:#DEDAD0; --card-dark:#1B2530;
-  --border-dark:#2A3542; --muted-dark:#9AA0A6; --amber:#E8A93D;
-}
-*{box-sizing:border-box; margin:0; padding:0;}
-body{
-  font-family:'Inter',-apple-system,sans-serif; background:#e9e6df;
-  display:flex; align-items:flex-start; justify-content:center; padding:32px 12px; min-height:100vh;
-}
-.device{
-  width:390px; height:844px; background:var(--chalk); border-radius:36px; overflow:hidden;
-  box-shadow:0 30px 60px rgba(0,0,0,.25); position:relative; border:8px solid #0a0a0a;
-  display:flex; flex-direction:column;
-}
-.device.dark{ background:var(--navy); }
-.status{ display:flex; justify-content:space-between; padding:14px 24px 4px; font-weight:600; font-size:14px; color:var(--navy);}
-.device.dark .status{ color:#fff; }
-.screen{ flex:1; overflow-y:auto; padding-bottom:8px; }
-.screen::-webkit-scrollbar{ width:0; }
-
-h1.hdr{ font-family:'Oswald',sans-serif; font-weight:700; font-size:22px; color:var(--navy); padding:14px 20px 2px; letter-spacing:.5px;}
-.device.dark h1.hdr{ color:#fff; }
-.sub{ font-size:12px; color:var(--slate); padding:0 20px 10px; }
-.device.dark .sub{ color:var(--muted-dark); }
-
-.topbar{ display:flex; justify-content:space-between; align-items:flex-start; padding-right:12px;}
-.logout-link{ font-size:11px; color:var(--cobalt); font-weight:600; cursor:pointer; padding:16px 20px 0 0; white-space:nowrap;}
-.device.dark .logout-link{ color:#7EA6FF; }
-
-.login-wrap, .signup-wrap{ padding:40px 24px 0; text-align:center; }
-.brand{ font-family:'Oswald',sans-serif; font-weight:700; font-size:44px; letter-spacing:5px; color:var(--cobalt); }
-.tagline{ font-size:11px; letter-spacing:2px; color:var(--slate); margin-top:4px; margin-bottom:28px;}
-.role-switch{ display:flex; gap:6px; padding:0 0 20px; }
-.role-switch button{
-  flex:1; padding:10px; border-radius:18px; border:none; font-family:'Inter',sans-serif; font-weight:700;
-  font-size:13px; cursor:pointer; background:var(--border-light); color:var(--slate);
-}
-.role-switch button.active{ background:var(--cobalt); color:#fff; }
-.login-field{ text-align:left; margin-bottom:14px; }
-.login-field label{ font-size:11px; font-weight:600; letter-spacing:1px; color:var(--slate); display:block; margin-bottom:5px;}
-.login-field input, .login-field select{
-  width:100%; padding:12px 14px; border-radius:10px; border:1.5px solid var(--input-border); font-size:13px; background:#fff; color:var(--navy);
-}
-.login-note{ font-size:11px; color:var(--slate); margin:6px 0 18px; text-align:left; background:#EEF3FF; border-radius:8px; padding:8px 10px;}
-
-.link-btn{ background:none; border:none; color:var(--cobalt); font-size:12px; font-weight:700; cursor:pointer; padding:4px 0; text-decoration:underline; }
-.signup-title{ font-size:16px; font-weight:700; color:var(--navy); margin:6px 0 18px; text-align:left; }
-.pending-note{ font-size:12px; color:var(--slate); background:#FFF7E6; border:1px solid #F0DBA6; border-radius:10px; padding:12px 14px; text-align:left; margin:10px 0; }
-
-.card{ background:#fff; border:1.5px solid var(--border-light); border-radius:14px; padding:14px; margin:0 20px 12px; }
-.device.dark .card{ background:var(--card-dark); border:none; }
-.card-dark{ background:var(--navy); color:#fff; border-radius:16px; padding:16px 18px; margin:0 20px 16px; }
-
-.range{ margin:10px 0; }
-.range-label{ display:flex; justify-content:space-between; font-size:11px; color:var(--slate); margin-bottom:4px; }
-.device.dark .range-label{ color:var(--muted-dark); }
-.range-track{ position:relative; height:10px; background:var(--border-light); border-radius:5px; }
-.device.dark .range-track{ background:var(--border-dark); }
-.range-band{ position:absolute; top:0; height:10px; background:#DCEAFF; border-radius:5px; }
-.device.dark .range-band{ background:#1E2A45; }
-.range-marker{ position:absolute; top:-4px; width:3px; height:18px; border-radius:2px; }
-.status-pill{ font-size:10px; font-weight:700; padding:2px 8px; border-radius:10px; }
-.in-range{ background:#E8F9CF; color:#5C8A00; }
-.out-range{ background:#FFE3E0; color:#C2372B; }
-.device.dark .in-range{ background:#1E2A22; color:var(--lime); }
-.device.dark .out-range{ background:#241B1B; color:var(--coral); }
-
-.table-wrap{ margin:0 20px 12px; border:1.5px solid var(--border-light); border-radius:14px; overflow:hidden; background:#fff;}
-.device.dark .table-wrap{ background:var(--card-dark); border:none; }
-table{ width:100%; border-collapse:collapse; font-size:11px; }
-th{ background:var(--border-light); color:var(--navy); font-size:9.5px; text-transform:uppercase; letter-spacing:.4px; padding:7px 6px; text-align:left; position:sticky; top:0; }
-.device.dark th{ background:var(--border-dark); color:var(--muted-dark); }
-td{ padding:7px 6px; border-top:1px solid var(--border-light); color:var(--navy); white-space:nowrap; }
-.device.dark td{ border-top:1px solid var(--border-dark); color:#fff; }
-tr.total-row td{ font-weight:700; background:#FAFAF7; border-top:2px solid var(--navy); }
-.device.dark tr.total-row td{ background:#141C26; border-top:2px solid #fff; }
-.type-pill{ font-size:9px; font-weight:700; padding:2px 6px; border-radius:6px; }
-.type-OR{ background:#FFE3E0; color:#C2372B; }
-.type-NR{ background:#E7EAFF; color:var(--cobalt); }
-.table-scroll{ overflow-x:auto; }
-.rm-btn{ color:var(--coral); font-size:13px; cursor:pointer; font-weight:700; }
-
-.btn{ display:block; width:calc(100% - 40px); margin:0 20px 10px; padding:13px; border-radius:24px; border:none;
-      font-family:'Inter',sans-serif; font-weight:700; font-size:14px; cursor:pointer; text-align:center; }
-.btn-primary{ background:var(--cobalt); color:#fff; }
-.btn-outline{ background:transparent; border:1.5px solid var(--navy); color:var(--navy); }
-.device.dark .btn-outline{ border-color:#fff; color:#fff; }
-.btn-danger{ background:var(--coral); color:#fff; }
-.btn-success{ background:#5C8A00; color:#fff; }
-.btn-row{ display:flex; gap:10px; margin:0 20px 10px; }
-.btn-row .btn{ margin:0; flex:1; }
-
-.add-food-box{ margin:0 20px 12px; }
-select, input[type=number], input[type=text], input[type=email], input[type=password], textarea{
-  width:100%; padding:10px; border-radius:10px; border:1.5px solid var(--input-border); font-size:13px; font-family:'Inter',sans-serif; background:#fff; color:var(--navy);
-}
-textarea{ resize:vertical; min-height:64px; }
-.device.dark select, .device.dark input[type=number], .device.dark input[type=text],
-.device.dark input[type=email], .device.dark input[type=password], .device.dark textarea{
-  background:var(--card-dark); border-color:var(--border-dark); color:#fff;
-}
-.field-row{ display:flex; gap:8px; margin-bottom:8px; }
-.field-row > div{ flex:1; }
-label.small{ font-size:10px; font-weight:700; letter-spacing:.5px; color:var(--slate); display:block; margin-bottom:4px; }
-.device.dark label.small{ color:var(--muted-dark); }
-.preview-row{ display:flex; justify-content:space-between; font-size:11px; color:var(--slate); padding:2px 0; }
-.device.dark .preview-row{ color:var(--muted-dark); }
-.preview-row b{ color:var(--navy); }
-.device.dark .preview-row b{ color:#fff; }
-
-.date-nav{ display:flex; align-items:center; justify-content:space-between; margin:0 20px 12px; background:#fff; border:1.5px solid var(--border-light); border-radius:12px; padding:8px 14px; }
-.device.dark .date-nav{ background:var(--card-dark); border:none; }
-.date-nav button{ background:none; border:none; font-size:16px; color:var(--cobalt); cursor:pointer; font-weight:700; }
-.date-nav span{ font-weight:600; font-size:13px; color:var(--navy); }
-.device.dark .date-nav span{ color:#fff; }
-
-.tabbar{ display:flex; border-top:1px solid var(--border-light); background:#fff; padding:8px 0 20px; }
-.device.dark .tabbar{ background:var(--card-dark); border-top:1px solid var(--border-dark); }
-.tabbar button{ flex:1; background:none; border:none; cursor:pointer; display:flex; flex-direction:column; align-items:center; gap:4px; font-family:'Inter',sans-serif; font-size:10px; color:#9AA0A6; }
-.device.dark .tabbar button{ color:var(--muted-dark); }
-.tabbar button.active{ color:var(--cobalt); font-weight:700; }
-.tabbar .dot{ width:8px; height:8px; border-radius:50%; background:#DEDAD0; }
-.device.dark .tabbar .dot{ background:#556070; }
-.tabbar button.active .dot{ background:var(--cobalt); }
-.tab-badge{ background:var(--coral); color:#fff; font-size:8px; font-weight:700; border-radius:8px; padding:1px 5px; position:absolute; margin-left:14px; margin-top:-4px; }
-
-.client-row, .pending-row{ display:flex; align-items:center; gap:10px; background:var(--card-dark); border-radius:14px; padding:12px; margin:0 20px 10px; cursor:pointer; }
-.pending-row{ cursor:default; }
-.avatar{ width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:12px; flex-shrink:0; }
-.client-info{ flex:1; }
-.client-name{ font-size:13px; font-weight:600; color:#fff; }
-.client-meta{ font-size:11px; color:var(--muted-dark); margin-top:1px; }
-.flag-row{ display:flex; gap:5px; margin-top:5px; flex-wrap:wrap; }
-.flag{ font-size:9px; font-weight:700; padding:2px 6px; border-radius:6px; }
-.flag.ok{ background:#1E2A22; color:var(--lime); }
-.flag.bad{ background:#241B1B; color:var(--coral); }
-.chev{ color:var(--muted-dark); font-size:16px; }
-
-.pending-actions{ display:flex; gap:6px; }
-.pending-actions button{ border:none; border-radius:16px; padding:7px 12px; font-size:11px; font-weight:700; cursor:pointer; }
-.approve-btn{ background:var(--lime); color:#1E2A22; }
-.decline-btn{ background:var(--coral); color:#fff; }
-
-.back-row{ display:flex; align-items:center; gap:10px; padding:12px 20px 2px; }
-.back-btn{ background:none; border:none; font-size:18px; color:var(--navy); cursor:pointer; }
-.device.dark .back-btn{ color:#fff; }
-
-.empty-note{ text-align:center; color:var(--slate); font-size:12px; padding:16px; }
-.device.dark .empty-note{ color:var(--muted-dark); }
-
-.feedback-msg{ background:#fff; border:1.5px solid var(--border-light); border-radius:14px; padding:12px 14px; margin:0 20px 10px; }
-.device.dark .feedback-msg{ background:var(--card-dark); border:none; }
-.feedback-msg.from-client{ border-color:var(--cobalt); }
-.feedback-msg .from{ font-size:10px; font-weight:700; color:var(--cobalt); letter-spacing:.5px; }
-.feedback-msg .txt{ font-size:13px; color:var(--navy); margin:4px 0; }
-.device.dark .feedback-msg .txt{ color:#fff; }
-.feedback-msg .time{ font-size:10px; color:var(--slate); }
-.device.dark .feedback-msg .time{ color:var(--muted-dark); }
-
-.ask-box{ margin:0 20px 14px; }
-
 /* =========================================================
-   RESPONSIVE LAYOUT
-   The app adapts to phones, tablets and desktop screens.
-   Existing colors/components are preserved.
+   FITNESS COACHING APP
+   COMPLETE RESPONSIVE CSS
    ========================================================= */
 
-/* Make the prototype viewport fluid instead of a fixed 390x844 phone. */
-html, body {
-  width: 100%;
-  min-height: 100%;
+
+/* =========================================================
+   1. VARIABLES
+   ========================================================= */
+
+:root{
+
+  --navy:#142033;
+  --navy-2:#1d2b40;
+
+  --cobalt:#2A5DFF;
+  --cobalt-dark:#1747d1;
+
+  --lime:#7CB342;
+  --lime-dark:#5C8A00;
+
+  --coral:#FF5A4E;
+  --coral-dark:#d83f35;
+
+  --gold:#E8A93D;
+
+  --chalk:#F7F5EF;
+  --white:#FFFFFF;
+
+  --slate:#6D7785;
+  --slate-light:#A5ADB8;
+
+  --line:#DDE2E8;
+  --line-dark:#CBD2DA;
+
+  --soft-blue:#EEF3FF;
+  --soft-green:#EFF8E8;
+  --soft-red:#FFF0EE;
+  --soft-yellow:#FFF8E7;
+
+  --shadow:
+    0 8px 25px rgba(20,32,51,.08);
+
+  --shadow-lg:
+    0 18px 50px rgba(20,32,51,.12);
+
+  --radius:14px;
+
 }
 
-body {
-  min-height: 100dvh;
-  padding: clamp(12px, 3vw, 32px);
-  overflow-x: hidden;
+
+/* =========================================================
+   2. RESET
+   ========================================================= */
+
+*{
+  box-sizing:border-box;
 }
 
-/* Desktop/tablet: keep the phone-like presentation, but let it scale
-   according to the available viewport instead of using one fixed size. */
-.device {
-  width: min(430px, 100%);
-  height: min(900px, calc(100dvh - clamp(24px, 6vw, 64px)));
-  min-height: 0;
-  max-height: 100dvh;
+html{
+  width:100%;
+  min-height:100%;
+  scroll-behavior:smooth;
 }
 
-/* Avoid content being squeezed on shorter screens. */
-.screen {
-  min-height: 0;
-  -webkit-overflow-scrolling: touch;
+body{
+  width:100%;
+  min-height:100vh;
+
+  margin:0;
+  padding:0;
+
+  background:#f1f0ec;
+
+  color:var(--navy);
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+
+  font-size:14px;
+
+  overflow-x:hidden;
+
+  -webkit-font-smoothing:antialiased;
 }
 
-/* Prevent long text/controls from forcing horizontal overflow. */
-.screen,
-.card,
-.card-dark,
-.add-food-box,
-.login-wrap,
-.signup-wrap,
-.client-row,
-.pending-row,
-.feedback-msg {
-  max-width: 100%;
+button,
+input,
+select,
+textarea{
+  font:inherit;
 }
 
-img,
-svg,
-video {
-  max-width: 100%;
-  height: auto;
+button{
+  cursor:pointer;
 }
 
-/* Tablets and small laptops */
-@media (min-width: 600px) {
-  .device {
-    width: min(460px, 92vw);
-    height: min(920px, 94dvh);
-  }
-
-  .login-wrap,
-  .signup-wrap {
-    padding-left: clamp(24px, 5vw, 36px);
-    padding-right: clamp(24px, 5vw, 36px);
-  }
+img{
+  max-width:100%;
+  display:block;
 }
 
-/* Phones: use the entire available viewport.
-   This removes the oversized black phone frame on real phones. */
-@media (max-width: 599px) {
-  body {
-    padding: 0;
-    display: block;
-    background: var(--chalk);
+a{
+  color:inherit;
+}
+
+
+/* =========================================================
+   3. MAIN APPLICATION
+   ========================================================= */
+
+.device{
+
+  width:100%;
+  min-height:100vh;
+  height:100dvh;
+
+  margin:0;
+  padding:0;
+
+  background:var(--chalk);
+
+  border:0;
+  border-radius:0;
+
+  box-shadow:none;
+
+  display:flex;
+  flex-direction:column;
+
+  overflow:hidden;
+}
+
+.device.dark{
+  background:var(--navy);
+  color:#fff;
+}
+
+
+/* =========================================================
+   4. STATUS BAR
+   ========================================================= */
+
+.status{
+
+  height:36px;
+
+  flex-shrink:0;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:
+    8px
+    22px
+    4px;
+
+  background:var(--chalk);
+
+  color:var(--navy);
+
+  font-size:12px;
+  font-weight:700;
+
+  letter-spacing:.2px;
+}
+
+.device.dark .status{
+  background:var(--navy);
+  color:#fff;
+}
+
+
+/* =========================================================
+   5. SCREEN
+   ========================================================= */
+
+.screen{
+
+  flex:1;
+
+  min-height:0;
+
+  width:100%;
+
+  overflow-y:auto;
+  overflow-x:hidden;
+
+  padding-bottom:20px;
+
+  -webkit-overflow-scrolling:touch;
+
+  scrollbar-width:thin;
+}
+
+.screen::-webkit-scrollbar{
+  width:6px;
+}
+
+.screen::-webkit-scrollbar-track{
+  background:transparent;
+}
+
+.screen::-webkit-scrollbar-thumb{
+  background:#c8ced6;
+  border-radius:20px;
+}
+
+
+/* =========================================================
+   6. TOP BAR
+   ========================================================= */
+
+.topbar{
+
+  width:100%;
+
+  display:flex;
+  align-items:center;
+
+  gap:12px;
+
+  padding:
+    18px
+    22px
+    4px;
+}
+
+.hdr{
+
+  margin:0;
+
+  flex:1;
+
+  color:var(--navy);
+
+  font-size:24px;
+  font-weight:800;
+
+  letter-spacing:-.5px;
+}
+
+.device.dark .hdr{
+  color:#fff;
+}
+
+.logout-link{
+
+  color:var(--cobalt);
+
+  font-size:12px;
+  font-weight:700;
+
+  cursor:pointer;
+
+  white-space:nowrap;
+}
+
+.sub{
+
+  padding:
+    3px
+    22px
+    14px;
+
+  color:var(--slate);
+
+  font-size:12px;
+  line-height:1.5;
+}
+
+.device.dark .sub{
+  color:#b9c2ce;
+}
+
+
+/* =========================================================
+   7. DATE NAVIGATION
+   ========================================================= */
+
+.date-nav{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  width:calc(100% - 40px);
+
+  margin:
+    4px
+    auto
+    14px;
+
+  padding:10px 12px;
+
+  background:#fff;
+
+  border:1px solid var(--line);
+
+  border-radius:12px;
+
+  box-shadow:0 2px 8px rgba(20,32,51,.04);
+
+  color:var(--navy);
+
+  font-size:13px;
+  font-weight:700;
+}
+
+.date-nav button{
+
+  width:30px;
+  height:30px;
+
+  border:0;
+
+  background:transparent;
+
+  color:var(--cobalt);
+
+  font-size:23px;
+  font-weight:700;
+
+  border-radius:8px;
+}
+
+.date-nav button:hover{
+  background:var(--soft-blue);
+}
+
+
+/* =========================================================
+   8. CARDS
+   ========================================================= */
+
+.card{
+
+  width:calc(100% - 40px);
+
+  margin:
+    10px auto;
+
+  padding:16px;
+
+  background:#fff;
+
+  border:
+    1px solid var(--line);
+
+  border-radius:var(--radius);
+
+  box-shadow:var(--shadow);
+
+}
+
+.card-dark{
+
+  width:calc(100% - 40px);
+
+  margin:
+    10px auto;
+
+  padding:16px;
+
+  background:var(--navy);
+
+  border-radius:var(--radius);
+
+  box-shadow:var(--shadow-lg);
+
+  color:#fff;
+}
+
+
+/* =========================================================
+   9. ADD FOOD BOX
+   ========================================================= */
+
+.add-food-box{
+
+  width:calc(100% - 40px);
+
+  margin:
+    10px auto;
+
+  padding:18px;
+
+  background:#fff;
+
+  border:
+    1px solid var(--line);
+
+  border-radius:var(--radius);
+
+  box-shadow:var(--shadow);
+}
+
+.add-food-box h2{
+  margin:0;
+}
+
+.add-food-box input,
+.add-food-box select,
+.add-food-box textarea{
+
+  width:100%;
+
+  min-height:44px;
+
+  padding:
+    11px
+    13px;
+
+  background:#fff;
+
+  border:
+    1px solid var(--line-dark);
+
+  border-radius:10px;
+
+  outline:none;
+
+  color:var(--navy);
+
+  font-size:13px;
+
+  transition:
+    border-color .15s,
+    box-shadow .15s;
+}
+
+.add-food-box input:focus,
+.add-food-box select:focus,
+.add-food-box textarea:focus{
+
+  border-color:var(--cobalt);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(42,93,255,.10);
+}
+
+
+/* =========================================================
+   10. FOOD SEARCH RESULTS
+   ========================================================= */
+
+.food-result{
+
+  width:100%;
+
+  display:block;
+
+  text-align:left;
+
+  padding:12px;
+
+  border:0;
+  border-bottom:1px solid #edf0f3;
+
+  background:#fff;
+
+  color:var(--navy);
+
+  cursor:pointer;
+}
+
+.food-result:hover{
+  background:var(--soft-blue);
+}
+
+.food-result-name{
+
+  font-size:13px;
+
+  font-weight:700;
+}
+
+.food-result-serving{
+
+  margin-top:3px;
+
+  color:var(--slate);
+
+  font-size:10px;
+}
+
+
+/* =========================================================
+   11. SELECTED FOOD
+   ========================================================= */
+
+.selected-food{
+
+  padding:14px;
+
+  background:#f8fbff;
+
+  border:
+    2px solid var(--cobalt);
+
+  border-radius:12px;
+
+  margin-top:10px;
+}
+
+.selected-food-name{
+
+  color:var(--navy);
+
+  font-size:15px;
+
+  font-weight:800;
+}
+
+.selected-food-serving{
+
+  margin-top:4px;
+
+  color:var(--slate);
+
+  font-size:10px;
+}
+
+
+/* =========================================================
+   12. NUTRITION MINI CARDS
+   ========================================================= */
+
+.nutrition-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:8px;
+
+  margin-top:12px;
+}
+
+.nutrition-mini{
+
+  min-width:0;
+
+  padding:9px 5px;
+
+  text-align:center;
+
+  background:#fff;
+
+  border:
+    1px solid var(--line);
+
+  border-radius:9px;
+}
+
+.nutrition-mini b{
+
+  display:block;
+
+  color:var(--navy);
+
+  font-size:13px;
+}
+
+.nutrition-mini small{
+
+  display:block;
+
+  margin-top:2px;
+
+  color:var(--slate);
+
+  font-size:9px;
+}
+
+
+/* =========================================================
+   13. BUTTONS
+   ========================================================= */
+
+.btn{
+
+  min-height:44px;
+
+  padding:
+    11px
+    18px;
+
+  border:0;
+
+  border-radius:10px;
+
+  font-size:12px;
+
+  font-weight:800;
+
+  letter-spacing:.1px;
+
+  transition:
+    transform .12s,
+    box-shadow .12s,
+    background .12s;
+
+}
+
+.btn:hover{
+  transform:translateY(-1px);
+}
+
+.btn:active{
+  transform:translateY(0);
+}
+
+
+.btn-primary{
+
+  background:var(--cobalt);
+
+  color:#fff;
+
+  box-shadow:
+    0 5px 14px
+    rgba(42,93,255,.20);
+}
+
+.btn-primary:hover{
+  background:var(--cobalt-dark);
+}
+
+
+.btn-danger{
+
+  background:var(--coral);
+
+  color:#fff;
+
+  box-shadow:
+    0 5px 14px
+    rgba(255,90,78,.18);
+}
+
+.btn-danger:hover{
+  background:var(--coral-dark);
+}
+
+
+.btn-secondary{
+
+  background:#eef1f5;
+
+  color:var(--navy);
+
+  border:
+    1px solid var(--line);
+}
+
+
+/* =========================================================
+   14. BUTTON ROW
+   ========================================================= */
+
+.btn-row{
+
+  display:flex;
+
+  gap:10px;
+
+  width:calc(100% - 40px);
+
+  margin:
+    10px auto;
+}
+
+.btn-row .btn{
+  flex:1;
+}
+
+
+/* =========================================================
+   15. RANGE BARS
+   ========================================================= */
+
+.range{
+
+  margin:
+    7px
+    0
+    15px;
+}
+
+.range:last-child{
+  margin-bottom:0;
+}
+
+.range-label{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:12px;
+
+  margin-bottom:7px;
+
+  font-size:11px;
+
+  color:#e5e9ee;
+}
+
+.range-label b{
+  color:#fff;
+}
+
+.range-track{
+
+  position:relative;
+
+  height:8px;
+
+  width:100%;
+
+  background:#354357;
+
+  border-radius:20px;
+
+  overflow:hidden;
+}
+
+.range-band{
+
+  position:absolute;
+
+  top:0;
+
+  height:100%;
+
+  background:
+    rgba(124,179,66,.72);
+
+  border-radius:20px;
+}
+
+.range-marker{
+
+  position:absolute;
+
+  top:-3px;
+
+  width:14px;
+  height:14px;
+
+  margin-left:-7px;
+
+  border-radius:50%;
+
+  border:2px solid #fff;
+
+  box-shadow:
+    0 2px 6px rgba(0,0,0,.25);
+}
+
+
+/* =========================================================
+   16. STATUS PILLS
+   ========================================================= */
+
+.status-pill{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:
+    4px
+    8px;
+
+  border-radius:20px;
+
+  font-size:9px;
+
+  font-weight:800;
+
+  white-space:nowrap;
+}
+
+.status-pill.in-range{
+
+  background:var(--soft-green);
+
+  color:var(--lime-dark);
+}
+
+.status-pill.out-range{
+
+  background:var(--soft-red);
+
+  color:var(--coral-dark);
+}
+
+
+/* =========================================================
+   17. PREVIEW ROW
+   ========================================================= */
+
+.preview-row{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:15px;
+
+  padding:
+    8px
+    0;
+
+  border-bottom:
+    1px solid #edf0f3;
+
+  font-size:12px;
+}
+
+.preview-row:last-child{
+  border-bottom:0;
+}
+
+.preview-row span{
+  color:var(--slate);
+}
+
+.preview-row b{
+  color:var(--navy);
+
+  font-size:12px;
+
+  text-align:right;
+}
+
+
+/* =========================================================
+   18. FOOD TABLE
+   ========================================================= */
+
+.table-wrap{
+
+  width:calc(100% - 40px);
+
+  margin:
+    8px auto
+    14px;
+
+  background:#fff;
+
+  border:
+    1px solid var(--line);
+
+  border-radius:var(--radius);
+
+  box-shadow:var(--shadow);
+
+  overflow:hidden;
+}
+
+.table-scroll{
+
+  width:100%;
+
+  overflow-x:auto;
+  overflow-y:hidden;
+
+  -webkit-overflow-scrolling:touch;
+}
+
+table{
+
+  width:100%;
+
+  min-width:760px;
+
+  border-collapse:collapse;
+
+  font-size:11px;
+}
+
+thead th{
+
+  padding:
+    10px
+    8px;
+
+  background:#edf2f8;
+
+  color:var(--navy);
+
+  border-bottom:
+    1px solid var(--line);
+
+  font-size:9px;
+
+  font-weight:800;
+
+  text-transform:uppercase;
+
+  letter-spacing:.2px;
+
+  text-align:left;
+
+  white-space:nowrap;
+}
+
+tbody td{
+
+  padding:
+    10px
+    8px;
+
+  border-bottom:
+    1px solid #edf0f3;
+
+  color:var(--navy);
+
+  vertical-align:middle;
+
+  white-space:nowrap;
+}
+
+tbody tr:last-child td{
+  border-bottom:0;
+}
+
+tbody tr:hover td{
+  background:#fafcff;
+}
+
+.total-row td{
+
+  background:#f4f7fb;
+
+  border-top:
+    2px solid var(--navy);
+
+  color:var(--navy);
+
+  font-weight:800;
+}
+
+
+/* =========================================================
+   19. MEAL / TYPE PILLS
+   ========================================================= */
+
+.type-pill{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:
+    4px
+    8px;
+
+  border-radius:20px;
+
+  font-size:8px;
+
+  font-weight:800;
+
+  white-space:nowrap;
+}
+
+.type-OR{
+
+  background:#fff0ed;
+
+  color:#df4d3f;
+}
+
+.type-NR{
+
+  background:#f0f3f7;
+
+  color:#5f6977;
+}
+
+.type-MR{
+
+  background:#fff5d9;
+
+  color:#a56d00;
+}
+
+
+/* =========================================================
+   20. REMOVE BUTTON
+   ========================================================= */
+
+.rm-btn{
+
+  display:inline-flex;
+
+  align-items:center;
+  justify-content:center;
+
+  width:28px;
+  height:28px;
+
+  border-radius:50%;
+
+  background:var(--soft-red);
+
+  color:var(--coral);
+
+  font-size:18px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:
+    background .15s;
+}
+
+.rm-btn:hover{
+  background:#ffdcd8;
+}
+
+
+/* =========================================================
+   21. LOGIN
+   ========================================================= */
+
+.login-wrap{
+
+  width:100%;
+
+  max-width:460px;
+
+  margin:
+    0 auto;
+
+  padding:
+    70px
+    24px
+    30px;
+}
+
+.brand{
+
+  color:var(--cobalt);
+
+  font-size:52px;
+
+  font-weight:900;
+
+  letter-spacing:-3px;
+
+  line-height:1;
+}
+
+.tagline{
+
+  margin-top:7px;
+
+  margin-bottom:30px;
+
+  color:var(--slate);
+
+  font-size:11px;
+
+  font-weight:700;
+
+  letter-spacing:1.5px;
+}
+
+.role-switch{
+
+  display:grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap:6px;
+
+  padding:4px;
+
+  background:#edf0f4;
+
+  border-radius:10px;
+
+  margin-bottom:20px;
+}
+
+.role-switch button{
+
+  min-height:40px;
+
+  border:0;
+
+  border-radius:8px;
+
+  background:transparent;
+
+  color:var(--slate);
+
+  font-size:12px;
+
+  font-weight:700;
+}
+
+.role-switch button.active{
+
+  background:#fff;
+
+  color:var(--cobalt);
+
+  box-shadow:
+    0 2px 8px
+    rgba(20,32,51,.08);
+}
+
+.login-field{
+
+  margin-bottom:15px;
+}
+
+.login-field label{
+
+  display:block;
+
+  margin-bottom:6px;
+
+  color:var(--slate);
+
+  font-size:9px;
+
+  font-weight:800;
+
+  letter-spacing:.7px;
+}
+
+.login-field input,
+.login-field select{
+
+  width:100%;
+
+  min-height:44px;
+
+  padding:
+    11px
+    12px;
+
+  border:
+    1px solid var(--line-dark);
+
+  border-radius:9px;
+
+  background:#fff;
+
+  color:var(--navy);
+
+  outline:none;
+}
+
+.login-field input:focus,
+.login-field select:focus{
+
+  border-color:var(--cobalt);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(42,93,255,.10);
+}
+
+.login-note{
+
+  padding:
+    11px
+    12px;
+
+  margin:
+    12px 0;
+
+  background:#f1f4f8;
+
+  border-radius:9px;
+
+  color:var(--slate);
+
+  font-size:10px;
+
+  line-height:1.5;
+}
+
+.login-note b{
+  color:var(--navy);
+}
+
+.link-btn{
+
+  display:block;
+
+  margin:13px auto;
+
+  border:0;
+
+  background:transparent;
+
+  color:var(--cobalt);
+
+  font-size:11px;
+
+  font-weight:700;
+
+  cursor:pointer;
+}
+
+.pending-note{
+
+  margin:
+    10px 0
+    15px;
+
+  padding:12px;
+
+  background:var(--soft-green);
+
+  border:
+    1px solid #d7e9c6;
+
+  border-radius:9px;
+
+  color:var(--lime-dark);
+
+  font-size:11px;
+
+  line-height:1.45;
+}
+
+
+/* =========================================================
+   22. SIGNUP
+   ========================================================= */
+
+.signup-wrap{
+
+  width:100%;
+
+  max-width:460px;
+
+  margin:0 auto;
+
+  padding:
+    60px
+    24px
+    30px;
+}
+
+.signup-title{
+
+  margin:
+    15px 0
+    20px;
+
+  color:var(--navy);
+
+  font-size:22px;
+
+  font-weight:800;
+}
+
+
+/* =========================================================
+   23. ASK COACH
+   ========================================================= */
+
+.ask-box{
+
+  width:calc(100% - 40px);
+
+  margin:
+    10px auto;
+
+  padding:15px;
+
+  background:#fff;
+
+  border:
+    1px solid var(--line);
+
+  border-radius:var(--radius);
+
+  box-shadow:var(--shadow);
+}
+
+.ask-box textarea{
+
+  width:100%;
+
+  min-height:90px;
+
+  resize:vertical;
+
+  margin-top:6px;
+
+  padding:11px;
+
+  border:
+    1px solid var(--line-dark);
+
+  border-radius:9px;
+
+  outline:none;
+
+  color:var(--navy);
+}
+
+.ask-box textarea:focus{
+
+  border-color:var(--cobalt);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(42,93,255,.10);
+}
+
+
+/* =========================================================
+   24. MESSAGES
+   ========================================================= */
+
+.feedback-msg{
+
+  width:calc(100% - 40px);
+
+  margin:
+    8px auto;
+
+  padding:13px;
+
+  background:#fff;
+
+  border:
+    1px solid var(--line);
+
+  border-radius:12px;
+
+  box-shadow:
+    0 3px 12px
+    rgba(20,32,51,.05);
+}
+
+.feedback-msg.from-client{
+
+  background:#f3f6ff;
+
+  border-color:#dce5ff;
+}
+
+.feedback-msg .from{
+
+  margin-bottom:5px;
+
+  color:var(--cobalt);
+
+  font-size:8px;
+
+  font-weight:900;
+
+  letter-spacing:.8px;
+}
+
+.feedback-msg .txt{
+
+  color:var(--navy);
+
+  font-size:12px;
+
+  line-height:1.5;
+}
+
+.feedback-msg .time{
+
+  margin-top:5px;
+
+  color:var(--slate);
+
+  font-size:9px;
+}
+
+.empty-note{
+
+  width:calc(100% - 40px);
+
+  margin:
+    15px auto;
+
+  padding:25px 15px;
+
+  text-align:center;
+
+  color:var(--slate);
+
+  background:#fff;
+
+  border:
+    1px dashed var(--line-dark);
+
+  border-radius:12px;
+
+  font-size:12px;
+}
+
+
+/* =========================================================
+   25. COACH DARK MODE
+   ========================================================= */
+
+.device.dark .screen{
+
+  background:var(--navy);
+
+  color:#fff;
+}
+
+.device.dark .card{
+
+  background:#1d2b40;
+
+  border-color:#334258;
+
+  color:#fff;
+
+  box-shadow:none;
+}
+
+.device.dark .card-dark{
+
+  background:#101b2c;
+
+  border:1px solid #2c3b50;
+
+  box-shadow:none;
+}
+
+.device.dark .preview-row{
+
+  border-color:#334258;
+}
+
+.device.dark .preview-row span{
+  color:#b9c2ce;
+}
+
+.device.dark .preview-row b{
+  color:#fff;
+}
+
+.device.dark .table-wrap{
+
+  background:#1d2b40;
+
+  border-color:#334258;
+
+  box-shadow:none;
+}
+
+.device.dark table{
+  color:#fff;
+}
+
+.device.dark thead th{
+
+  background:#26364b;
+
+  color:#fff;
+
+  border-color:#3a4a60;
+}
+
+.device.dark tbody td{
+
+  color:#fff;
+
+  border-color:#334258;
+}
+
+.device.dark tbody tr:hover td{
+  background:#24354a;
+}
+
+.device.dark .total-row td{
+
+  background:#26364b;
+
+  color:#fff;
+
+  border-color:#fff;
+}
+
+.device.dark .add-food-box,
+.device.dark .ask-box{
+
+  background:#1d2b40;
+
+  border-color:#334258;
+
+  color:#fff;
+}
+
+.device.dark .add-food-box input,
+.device.dark .add-food-box select,
+.device.dark .add-food-box textarea,
+.device.dark .ask-box textarea{
+
+  background:#101b2c;
+
+  border-color:#3b4b60;
+
+  color:#fff;
+}
+
+.device.dark .selected-food{
+
+  background:#17263b;
+
+  border-color:#4f7aff;
+}
+
+.device.dark .selected-food-name{
+  color:#fff;
+}
+
+.device.dark .nutrition-mini{
+
+  background:#26364b;
+
+  border-color:#3b4b60;
+}
+
+.device.dark .nutrition-mini b{
+  color:#fff;
+}
+
+.device.dark .nutrition-mini small{
+  color:#b9c2ce;
+}
+
+.device.dark .feedback-msg{
+
+  background:#1d2b40;
+
+  border-color:#334258;
+}
+
+.device.dark .feedback-msg .txt{
+  color:#fff;
+}
+
+.device.dark .date-nav{
+
+  background:#1d2b40;
+
+  border-color:#334258;
+
+  color:#fff;
+}
+
+
+/* =========================================================
+   26. CLIENT ROWS
+   ========================================================= */
+
+.client-row{
+
+  width:calc(100% - 40px);
+
+  margin:
+    8px auto;
+
+  padding:14px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  background:#1d2b40;
+
+  border:
+    1px solid #334258;
+
+  border-radius:12px;
+
+  cursor:pointer;
+
+  transition:
+    transform .12s,
+    background .12s;
+}
+
+.client-row:hover{
+
+  transform:translateY(-1px);
+
+  background:#24354a;
+}
+
+.avatar{
+
+  flex-shrink:0;
+
+  width:42px;
+  height:42px;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  color:#fff;
+
+  font-size:12px;
+
+  font-weight:900;
+}
+
+.client-info{
+
+  min-width:0;
+
+  flex:1;
+}
+
+.client-name{
+
+  color:#fff;
+
+  font-size:13px;
+
+  font-weight:800;
+}
+
+.client-meta{
+
+  margin-top:3px;
+
+  color:#aeb8c5;
+
+  font-size:9px;
+}
+
+.chev{
+
+  color:#aeb8c5;
+
+  font-size:22px;
+}
+
+.flag-row{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:5px;
+
+  margin-top:7px;
+}
+
+.flag{
+
+  padding:
+    3px
+    6px;
+
+  border-radius:10px;
+
+  font-size:8px;
+
+  font-weight:800;
+}
+
+.flag.ok{
+
+  background:#29452a;
+
+  color:#9bdd7c;
+}
+
+.flag.bad{
+
+  background:#512b2a;
+
+  color:#ff958c;
+}
+
+
+/* =========================================================
+   27. COACH BACK ROW
+   ========================================================= */
+
+.back-row{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  padding:
+    15px
+    20px
+    5px;
+}
+
+.back-btn{
+
+  width:32px;
+  height:32px;
+
+  border:0;
+
+  border-radius:8px;
+
+  background:#26364b;
+
+  color:#fff;
+
+  font-size:20px;
+}
+
+
+/* =========================================================
+   28. REQUESTS
+   ========================================================= */
+
+.pending-row{
+
+  width:calc(100% - 40px);
+
+  margin:
+    8px auto;
+
+  padding:14px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  background:#1d2b40;
+
+  border:
+    1px solid #334258;
+
+  border-radius:12px;
+}
+
+.pending-actions{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:6px;
+}
+
+.approve-btn,
+.decline-btn{
+
+  border:0;
+
+  border-radius:7px;
+
+  padding:
+    7px
+    10px;
+
+  font-size:9px;
+
+  font-weight:800;
+
+  cursor:pointer;
+}
+
+.approve-btn{
+
+  background:var(--lime);
+
+  color:#fff;
+}
+
+.decline-btn{
+
+  background:#3a4656;
+
+  color:#fff;
+}
+
+
+/* =========================================================
+   29. SMALL LABEL
+   ========================================================= */
+
+.small{
+
+  display:block;
+
+  color:var(--slate);
+
+  font-size:9px;
+
+  font-weight:800;
+
+  letter-spacing:.6px;
+}
+
+
+/* =========================================================
+   30. TAB BAR
+   ========================================================= */
+
+.tabbar{
+
+  flex-shrink:0;
+
+  width:100%;
+
+  min-height:64px;
+
+  display:flex;
+
+  align-items:stretch;
+
+  justify-content:space-around;
+
+  background:#fff;
+
+  border-top:
+    1px solid var(--line);
+
+  padding:
+    5px
+    6px;
+
+  z-index:20;
+}
+
+.tabbar button{
+
+  position:relative;
+
+  flex:1;
+
+  min-width:0;
+
+  border:0;
+
+  background:transparent;
+
+  color:#9ca5b1;
+
+  font-size:10px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  border-radius:9px;
+}
+
+.tabbar button:hover{
+  background:#f5f7fa;
+}
+
+.tabbar button.active{
+
+  color:var(--cobalt);
+
+  background:var(--soft-blue);
+}
+
+.tabbar .dot{
+
+  display:block;
+
+  width:7px;
+  height:7px;
+
+  margin:
+    0 auto
+    4px;
+
+  border-radius:50%;
+
+  background:#d8dde4;
+}
+
+.tabbar button.active .dot{
+  background:var(--cobalt);
+}
+
+.device.dark .tabbar{
+
+  background:#101b2c;
+
+  border-color:#334258;
+}
+
+.device.dark .tabbar button{
+  color:#8290a3;
+}
+
+.device.dark .tabbar button:hover{
+  background:#1b2a3f;
+}
+
+.device.dark .tabbar button.active{
+
+  background:#1e3150;
+
+  color:#fff;
+}
+
+.device.dark .tabbar button.active .dot{
+  background:var(--cobalt);
+}
+
+
+/* =========================================================
+   31. TAB BADGE
+   ========================================================= */
+
+.tab-badge{
+
+  position:absolute;
+
+  top:2px;
+  right:18%;
+
+  min-width:17px;
+  height:17px;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  padding:0 4px;
+
+  background:var(--coral);
+
+  color:#fff;
+
+  border-radius:20px;
+
+  font-size:8px;
+
+  font-weight:900;
+}
+
+
+/* =========================================================
+   32. DESKTOP LAYOUT
+   ========================================================= */
+
+@media (min-width:901px){
+
+  body{
+    background:#eeece7;
   }
 
-  .device,
-  .device.dark {
-    width: 100%;
-    height: 100dvh;
-    min-height: 100dvh;
-    max-height: none;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
+  .device{
+
+    width:100%;
+
+    max-width:1400px;
+
+    min-height:100vh;
+
+    margin:0 auto;
+
+    background:var(--chalk);
   }
 
-  .status {
-    padding-top: max(10px, env(safe-area-inset-top));
-    padding-left: max(18px, env(safe-area-inset-left));
-    padding-right: max(18px, env(safe-area-inset-right));
+  .screen{
+
+    width:100%;
+
+    padding:
+      0
+      30px
+      30px;
   }
 
-  .tabbar {
-    padding-bottom: max(10px, env(safe-area-inset-bottom));
+  .topbar{
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding-top:28px;
   }
 
-  .login-wrap,
-  .signup-wrap {
-    padding: clamp(24px, 7vw, 40px) clamp(16px, 6vw, 28px) 20px;
-  }
+  .sub{
 
-  .brand {
-    font-size: clamp(36px, 11vw, 44px);
-  }
+    max-width:1100px;
 
-  .tagline {
-    font-size: clamp(9px, 2.7vw, 11px);
-    letter-spacing: clamp(1.2px, .5vw, 2px);
-  }
-
-  h1.hdr {
-    font-size: clamp(19px, 6vw, 22px);
+    margin:0 auto;
   }
 
   .card,
   .card-dark,
-  .table-wrap,
   .add-food-box,
   .ask-box,
-  .feedback-msg {
-    margin-left: clamp(12px, 5vw, 20px);
-    margin-right: clamp(12px, 5vw, 20px);
-  }
-
-  .btn {
-    width: calc(100% - clamp(24px, 10vw, 40px));
-    margin-left: clamp(12px, 5vw, 20px);
-    margin-right: clamp(12px, 5vw, 20px);
-  }
-
-  .btn-row {
-    margin-left: clamp(12px, 5vw, 20px);
-    margin-right: clamp(12px, 5vw, 20px);
-  }
-
-  .topbar {
-    padding-right: 4px;
-  }
-
-  .logout-link {
-    padding-right: 14px;
-  }
-}
-
-/* Very narrow phones (320–375px). */
-@media (max-width: 380px) {
-  .status {
-    font-size: 12px;
-  }
-
-  .login-wrap,
-  .signup-wrap {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
-  .role-switch {
-    gap: 5px;
-  }
-
-  .role-switch button {
-    padding: 9px 5px;
-    font-size: 12px;
-  }
-
-  .login-field input,
-  .login-field select,
-  select,
-  input[type=number],
-  input[type=text],
-  input[type=email],
-  input[type=password],
-  textarea {
-    font-size: 12px;
-    padding: 10px;
-  }
-
-  .field-row {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .range-label {
-    gap: 8px;
-    align-items: flex-start;
-  }
-
-  .range-label > span:last-child {
-    text-align: right;
-  }
-
-  .status-pill {
-    padding: 2px 5px;
-  }
-
+  .table-wrap,
+  .feedback-msg,
   .client-row,
-  .pending-row {
-    margin-left: 12px;
-    margin-right: 12px;
-    padding: 10px;
+  .pending-row,
+  .empty-note{
+
+    max-width:1100px;
   }
 
-  .pending-row {
-    align-items: flex-start;
+  .btn{
+
+    max-width:1100px;
   }
 
-  .pending-actions {
-    flex-direction: column;
+  .date-nav{
+
+    max-width:1100px;
   }
 
-  .pending-actions button {
-    padding: 6px 9px;
+  .tabbar{
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    border:
+      1px solid var(--line);
+
+    border-bottom:0;
+
+    border-radius:
+      14px
+      14px
+      0
+      0;
   }
+
 }
 
-/* Landscape phones: give the app more usable vertical space. */
-@media (max-width: 900px) and (orientation: landscape) {
-  body {
-    padding: 0;
+
+/* =========================================================
+   33. TABLET
+   ========================================================= */
+
+@media (
+  min-width:600px
+) and (
+  max-width:900px
+){
+
+  .device{
+
+    width:100%;
+
+    height:100dvh;
+
+    min-height:100dvh;
+
+    border:0;
+
+    border-radius:0;
+
+    box-shadow:none;
+  }
+
+  .screen{
+
+    padding:
+      0
+      18px
+      20px;
+  }
+
+  .topbar{
+    padding-left:8px;
+    padding-right:8px;
+  }
+
+  .sub{
+    padding-left:8px;
+    padding-right:8px;
+  }
+
+  .card,
+  .card-dark,
+  .add-food-box,
+  .ask-box,
+  .table-wrap,
+  .feedback-msg,
+  .client-row,
+  .pending-row,
+  .empty-note{
+
+    width:100%;
+  }
+
+  .date-nav{
+
+    width:100%;
+  }
+
+}
+
+
+/* =========================================================
+   34. MOBILE
+   ========================================================= */
+
+@media (max-width:599px){
+
+  body{
+    background:var(--chalk);
   }
 
   .device,
-  .device.dark {
-    width: 100%;
-    height: 100dvh;
-    min-height: 100dvh;
-    border: 0;
-    border-radius: 0;
+  .device.dark{
+
+    width:100%;
+
+    height:100dvh;
+
+    min-height:100dvh;
+
+    border:0;
+
+    border-radius:0;
+
+    box-shadow:none;
   }
 
-  .login-wrap,
-  .signup-wrap {
-    padding-top: 18px;
+  .status{
+
+    padding-left:
+      max(
+        16px,
+        env(safe-area-inset-left)
+      );
+
+    padding-right:
+      max(
+        16px,
+        env(safe-area-inset-right)
+      );
+
+    padding-top:
+      max(
+        8px,
+        env(safe-area-inset-top)
+      );
   }
 
-  .brand {
-    font-size: 34px;
+  .screen{
+
+    padding:
+      0
+      0
+      10px;
   }
 
-  .tagline {
-    margin-bottom: 14px;
-  }
-}
+  .topbar{
 
-/* Touch devices: make controls easier to tap. */
-@media (hover: none) and (pointer: coarse) {
-  button,
-  select,
-  input,
-  textarea,
+    padding:
+      16px
+      16px
+      4px;
+  }
+
+  .hdr{
+
+    font-size:21px;
+
+    letter-spacing:-.3px;
+  }
+
+  .sub{
+
+    padding:
+      3px
+      16px
+      12px;
+  }
+
+  .date-nav{
+
+    width:calc(100% - 28px);
+
+    margin:
+      5px auto
+      12px;
+  }
+
+  .card,
+  .card-dark,
+  .add-food-box,
+  .ask-box,
+  .table-wrap,
+  .feedback-msg,
+  .empty-note{
+
+    width:calc(100% - 28px);
+
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .card,
+  .card-dark,
+  .add-food-box,
+  .ask-box{
+
+    padding:14px;
+  }
+
+  .btn{
+
+    width:calc(100% - 28px);
+
+    margin-left:auto;
+    margin-right:auto;
+
+    display:block;
+  }
+
+  .btn-row{
+
+    width:calc(100% - 28px);
+
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .login-wrap{
+
+    max-width:none;
+
+    padding:
+      45px
+      18px
+      25px;
+  }
+
+  .signup-wrap{
+
+    max-width:none;
+
+    padding:
+      35px
+      18px
+      25px;
+  }
+
+  .brand{
+
+    font-size:44px;
+  }
+
+  .tagline{
+
+    font-size:9px;
+
+    letter-spacing:1.2px;
+  }
+
+  .nutrition-grid{
+
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+  .preview-row{
+
+    font-size:11px;
+  }
+
+  .preview-row b{
+
+    font-size:11px;
+  }
+
   .client-row,
-  .link-btn,
-  .logout-link {
-    touch-action: manipulation;
+  .pending-row{
+
+    width:calc(100% - 28px);
+
+    margin-left:auto;
+    margin-right:auto;
   }
 
-  .tabbar button {
-    min-height: 44px;
+  .pending-row{
+
+    align-items:flex-start;
   }
 
-  .btn {
-    min-height: 44px;
+  .pending-actions{
+
+    flex-shrink:0;
   }
+
+  .tabbar{
+
+    min-height:66px;
+
+    padding:
+      5px
+      4px;
+
+    padding-bottom:
+      max(
+        8px,
+        env(safe-area-inset-bottom)
+      );
+  }
+
+  .tabbar button{
+
+    font-size:9px;
+  }
+
+  .tab-badge{
+
+    right:14%;
+  }
+
 }
 
-/* Respect users who prefer reduced motion. */
-@media (prefers-reduced-motion: reduce) {
+
+/* =========================================================
+   35. VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width:380px){
+
+  .topbar{
+
+    padding-left:12px;
+    padding-right:12px;
+  }
+
+  .hdr{
+    font-size:19px;
+  }
+
+  .sub{
+
+    padding-left:12px;
+    padding-right:12px;
+  }
+
+  .card,
+  .card-dark,
+  .add-food-box,
+  .ask-box,
+  .table-wrap,
+  .feedback-msg,
+  .empty-note{
+
+    width:calc(100% - 20px);
+  }
+
+  .btn{
+
+    width:calc(100% - 20px);
+  }
+
+  .btn-row{
+
+    width:calc(100% - 20px);
+  }
+
+  .date-nav{
+
+    width:calc(100% - 20px);
+  }
+
+  .client-row,
+  .pending-row{
+
+    width:calc(100% - 20px);
+  }
+
+  .login-wrap{
+
+    padding:
+      30px
+      14px
+      20px;
+  }
+
+  .brand{
+    font-size:38px;
+  }
+
+}
+
+
+/* =========================================================
+   36. LANDSCAPE MOBILE
+   ========================================================= */
+
+@media (
+  max-width:900px
+) and (
+  orientation:landscape
+){
+
+  .device,
+  .device.dark{
+
+    width:100%;
+
+    height:100dvh;
+
+    min-height:100dvh;
+
+    border:0;
+
+    border-radius:0;
+
+    box-shadow:none;
+  }
+
+  .login-wrap{
+
+    padding-top:18px;
+    padding-bottom:18px;
+  }
+
+  .brand{
+    font-size:34px;
+  }
+
+  .tagline{
+    margin-bottom:15px;
+  }
+
+}
+
+
+/* =========================================================
+   37. TOUCH DEVICES
+   ========================================================= */
+
+@media (
+  hover:none
+) and (
+  pointer:coarse
+){
+
+  button,
+  input,
+  select,
+  textarea{
+
+    touch-action:manipulation;
+  }
+
+  .btn{
+
+    min-height:46px;
+  }
+
+  .tabbar button{
+
+    min-height:46px;
+  }
+
+}
+
+
+/* =========================================================
+   38. REDUCED MOTION
+   ========================================================= */
+
+@media (
+  prefers-reduced-motion:reduce
+){
+
   *,
   *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition: none !important;
-    animation: none !important;
+  *::after{
+
+    animation:none !important;
+
+    transition:none !important;
+
+    scroll-behavior:auto !important;
   }
+
+}
+
+
+/* =========================================================
+   39. PRINT
+   ========================================================= */
+
+@media print{
+
+  body{
+    background:#fff;
+  }
+
+  .device{
+    height:auto;
+    min-height:0;
+    overflow:visible;
+  }
+
+  .status,
+  .tabbar,
+  .logout-link,
+  .btn,
+  .date-nav{
+    display:none !important;
+  }
+
+  .screen{
+    overflow:visible;
+  }
+
 }
