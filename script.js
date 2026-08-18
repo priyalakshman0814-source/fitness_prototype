@@ -1,21 +1,49 @@
 /* ---------------- DATA MODEL ---------------- */
-const FOOD_DB = [
-  { name:"Rice (spoon)",              serving:"1 spoon - 20 g cooked",   cal:19,  gl:4.0,  netCarbs:4.3, fatCarbs:0.1, fats:0,   protein:0.4, fiber:0.1 },
-  { name:"Bread - multigrain",        serving:"1 slice - approx 20 g",   cal:45,  gl:5.6,  netCarbs:8,   fatCarbs:0.3, fats:0,   protein:2,   fiber:1.3 },
-  { name:"Vegetable Biryani / Pulao", serving:"1 katori - 124 g",        cal:142, gl:12.4, netCarbs:20,  fatCarbs:6,   fats:0,   protein:3,   fiber:2 },
-  { name:"Dal (mixed lentil)",        serving:"1 katori - 150 g",        cal:120, gl:8.0,  netCarbs:14,  fatCarbs:2,   fats:1,   protein:8,   fiber:5 },
-  { name:"Roti (whole wheat)",        serving:"1 piece - 30 g",          cal:80,  gl:9.5,  netCarbs:15,  fatCarbs:1,   fats:0,   protein:3,   fiber:2 },
-  { name:"Paneer (grilled)",          serving:"100 g",                   cal:265, gl:0.5,  netCarbs:2,   fatCarbs:20,  fats:20,  protein:18,  fiber:0 },
-  { name:"Boiled Egg",                serving:"1 piece",                 cal:78,  gl:0,    netCarbs:0.6, fatCarbs:5,   fats:5,   protein:6,   fiber:0 },
-  { name:"Chicken Curry",             serving:"1 katori - 150 g",        cal:220, gl:2.0,  netCarbs:5,   fatCarbs:12,  fats:11,  protein:24,  fiber:1 },
-  { name:"Curd / Yogurt",             serving:"1 bowl - 150 g",          cal:98,  gl:4.5,  netCarbs:7,   fatCarbs:5,   fats:5,   protein:6,   fiber:0 },
-  { name:"Banana",                    serving:"1 medium",                cal:105, gl:11.0, netCarbs:24,  fatCarbs:0.4, fats:0,   protein:1,   fiber:3 },
-  { name:"Almonds",                   serving:"10 pieces",               cal:70,  gl:0.5,  netCarbs:1.5, fatCarbs:6,   fats:6,   protein:3,   fiber:1.5},
-  { name:"Oats (cooked)",             serving:"1 bowl - 200 g",          cal:150, gl:14.5, netCarbs:24,  fatCarbs:3,   fats:3,   protein:5,   fiber:4 },
-  { name:"Milk (toned)",              serving:"1 glass - 200 ml",        cal:104, gl:6.5,  netCarbs:10,  fatCarbs:4,   fats:4,   protein:6,   fiber:0 },
-  { name:"Mixed Salad",               serving:"1 bowl - 150 g",          cal:45,  gl:2.0,  netCarbs:6,   fatCarbs:0.5, fats:0,   protein:2,   fiber:3 },
-  { name:"Ghee",                      serving:"1 tsp",                   cal:45,  gl:0,    netCarbs:0,   fatCarbs:5,   fats:5,   protein:0,   fiber:0 },
-];
+/* ---------------- FOOD DATABASE ---------------- */
+
+let FOOD_DB = [];
+let foodDatabaseReady = false;
+function foodNutrition(food) {
+  return {
+    name: food.name,
+    serving: food.portion_size,
+
+    cal: Number(food.calories) || 0,
+    gl: Number(food.gl) || 0,
+
+    netCarbs: Number(food.net_carbs_g) || 0,
+    fatCarbs: Number(food.mixed_fat_g) || 0,
+
+    fats: Number(food.pure_fats_g) || 0,
+    protein: Number(food.protein_g) || 0,
+    fiber: Number(food.fiber_g) || 0
+  };
+}
+async function loadFoodDatabase() {
+  try {
+    const response = await fetch("./food_database_clean.json");
+
+    if (!response.ok) {
+      throw new Error("Food database file could not be loaded.");
+    }
+
+    const data = await response.json();
+
+    FOOD_DB = data.foods || [];
+    foodDatabaseReady = true;
+
+    console.log("Food database loaded:", FOOD_DB.length, "foods");
+
+    render();
+  } catch (error) {
+    console.error("Food database error:", error);
+
+    alert(
+      "Food database could not be loaded. " +
+      "Make sure food_database_clean.json is in the same folder as index.html."
+    );
+  }
+}
 const TARGETS = { calories:[1400,1800], gl:[30,70], fats:[60,120], protein:[40,80] };
 const AVATAR_COLORS = ["#2A5DFF","#FF5A4E","#E8A93D","#5C8A00","#8A4FFF"];
 
@@ -26,10 +54,26 @@ function sumLog(log){
     fats:a.fats+e.fats, protein:a.protein+e.protein, fiber:a.fiber+e.fiber
   }), {cal:0,gl:0,netCarbs:0,fatCarbs:0,fats:0,protein:0,fiber:0});
 }
-function mkEntry(type, food, qty){
-  return { type, name:food.name, serving:food.serving, qty,
-    cal:round1(food.cal*qty), gl:round1(food.gl*qty), netCarbs:round1(food.netCarbs*qty),
-    fatCarbs:round1(food.fatCarbs*qty), fats:round1(food.fats*qty), protein:round1(food.protein*qty), fiber:round1(food.fiber*qty) };
+function mkEntry(type, rawFood, qty){
+  const food = foodNutrition(rawFood);
+
+  return {
+    type,
+
+    foodId: rawFood.id,
+    name: food.name,
+    serving: food.serving,
+
+    qty,
+
+    cal: round1(food.cal * qty),
+    gl: round1(food.gl * qty),
+    netCarbs: round1(food.netCarbs * qty),
+    fatCarbs: round1(food.fatCarbs * qty),
+    fats: round1(food.fats * qty),
+    protein: round1(food.protein * qty),
+    fiber: round1(food.fiber * qty)
+  };
 }
 function initialsOf(name){
   return name.trim().split(/\s+/).map(p=>p[0]).slice(0,2).join("").toUpperCase();
@@ -43,18 +87,61 @@ function timeNow(){
 // Every message (coach feedback OR a client's question) lives in one `messages`
 // array per client so the thread reads as a real back-and-forth conversation.
 const CLIENTS = [
-  { id:"priya", initials:"PS", name:"Priya Sharma", color:"#2A5DFF", targets:TARGETS, password:"1234",
-    log:[ mkEntry("OR", FOOD_DB[0], 10), mkEntry("NR", FOOD_DB[1], 3), mkEntry("OR", FOOD_DB[2], 1), mkEntry("OR", FOOD_DB[7], 1) ],
-    messages:[ {from:"coach", text:"Great consistency this week — keep logging every meal.", time:"Mon 17 Aug, 8:02 PM"} ] },
-  { id:"arjun", initials:"AM", name:"Arjun Mehta", color:"#FF5A4E", targets:TARGETS, password:"1234",
-    log:[ mkEntry("OR", FOOD_DB[5], 2), mkEntry("NR", FOOD_DB[14], 4), mkEntry("OR", FOOD_DB[13], 1) ],
-    messages:[] },
-  { id:"kavya", initials:"KI", name:"Kavya Iyer", color:"#E8A93D", targets:TARGETS, password:"1234",
-    log:[ mkEntry("OR", FOOD_DB[3], 1), mkEntry("OR", FOOD_DB[4], 2), mkEntry("NR", FOOD_DB[9], 1) ],
-    messages:[ {from:"coach", text:"Try to add a protein source at breakfast tomorrow.", time:"Mon 17 Aug, 7:40 PM"} ] },
-  { id:"rohan", initials:"RD", name:"Rohan Das", color:"#2A5DFF", targets:TARGETS, password:"1234",
-    log:[ mkEntry("OR", FOOD_DB[6], 2), mkEntry("OR", FOOD_DB[7], 1), mkEntry("NR", FOOD_DB[11], 1), mkEntry("OR", FOOD_DB[8], 1) ],
-    messages:[] },
+  {
+    id:"priya",
+    initials:"PS",
+    name:"Priya Sharma",
+    color:"#2A5DFF",
+    targets:TARGETS,
+    password:"1234",
+    log:[],
+    messages:[
+      {
+        from:"coach",
+        text:"Great consistency this week — keep logging every meal.",
+        time:"Mon 17 Aug, 8:02 PM"
+      }
+    ]
+  },
+
+  {
+    id:"arjun",
+    initials:"AM",
+    name:"Arjun Mehta",
+    color:"#FF5A4E",
+    targets:TARGETS,
+    password:"1234",
+    log:[],
+    messages:[]
+  },
+
+  {
+    id:"kavya",
+    initials:"KI",
+    name:"Kavya Iyer",
+    color:"#E8A93D",
+    targets:TARGETS,
+    password:"1234",
+    log:[],
+    messages:[
+      {
+        from:"coach",
+        text:"Try to add a protein source at breakfast tomorrow.",
+        time:"Mon 17 Aug, 7:40 PM"
+      }
+    ]
+  },
+
+  {
+    id:"rohan",
+    initials:"RD",
+    name:"Rohan Das",
+    color:"#2A5DFF",
+    targets:TARGETS,
+    password:"1234",
+    log:[],
+    messages:[]
+  }
 ];
 const COACH = { name:"Coach Dev Verma", email:"farah@lanefit.app", password:"1234" };
 
@@ -91,12 +178,10 @@ function goClient(screen){ state.clientScreen = screen; render(); }
 function goCoach(screen, clientId){ state.coachScreen = screen; if(clientId) state.selectedClientId = clientId; render(); }
 function shiftDate(dir){
   state.dateLabel = dir>0 ? "Wed, 19 Aug" : (dir<0 ? "Mon, 17 Aug" : "Tue, 18 Aug");
-  render();
-}
+loadFoodDatabase();}
 function myClient(){ return CLIENTS.find(c=>c.id===session.clientId); }
 
 /* ---------------- ADD FOOD (from list OR user's own custom meal) ---------------- */
-function setFoodMode(mode){ state.addFoodMode = mode; render(); }
 
 function addFoodToMe(){
   const sel = document.getElementById("foodSelect");
@@ -104,28 +189,6 @@ function addFoodToMe(){
   const type = document.getElementById("typeSelect").value;
   const food = FOOD_DB[sel.value];
   myClient().log.push(mkEntry(type, food, qty));
-  goClient("log");
-}
-
-function addCustomFoodToMe(){
-  const name = document.getElementById("customName").value.trim();
-  if(!name){ alert("Please enter a food name."); return; }
-  const serving = document.getElementById("customServing").value.trim() || "1 serving";
-  const type = document.getElementById("customType").value;
-  const qty = parseFloat(document.getElementById("customQty").value) || 1;
-  const cal = parseFloat(document.getElementById("customCal").value) || 0;
-  const gl = parseFloat(document.getElementById("customGl").value) || 0;
-  const netCarbs = parseFloat(document.getElementById("customNetCarbs").value) || 0;
-  const fatCarbs = parseFloat(document.getElementById("customFatCarbs").value) || 0;
-  const fats = parseFloat(document.getElementById("customFats").value) || 0;
-  const protein = parseFloat(document.getElementById("customProtein").value) || 0;
-  const fiber = parseFloat(document.getElementById("customFiber").value) || 0;
-
-  const food = { name, serving, cal, gl, netCarbs, fatCarbs, fats, protein, fiber };
-  FOOD_DB.push(food);            // so it also appears in the dropdown next time
-  myClient().log.push(mkEntry(type, food, qty));
-
-  state.addFoodMode = "select";
   goClient("log");
 }
 
