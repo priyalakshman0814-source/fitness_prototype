@@ -5,586 +5,183 @@
 
 
 /* =========================================================
-   HERO — SEAMLESS BLEND WITH CLIENT PROGRAMME IMAGE
+   WHOLESOME HABITS — DEDICATED MOBILE HERO
+   The desktop hero stays unchanged.
    ========================================================= */
 
-.hero-blended {
-  position: relative;
-  isolation: isolate;
-  min-height: 680px;
-  grid-template-columns: minmax(420px, 0.9fr) minmax(520px, 1.1fr);
-  align-items: stretch;
-  padding: 0 0 0 7vw;
-  gap: 0;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 70% 45%, rgba(223,232,216,.7), transparent 42%),
-    linear-gradient(90deg, #f7f4eb 0%, #f7f4eb 43%, #f1f4e9 72%, #e8eee0 100%);
+.mobile-hero {
+  display: none;
 }
 
-.hero-blended .hero-copy {
-  position: relative;
-  z-index: 5;
-  align-self: center;
-  padding: 82px 30px 82px 0;
-  max-width: 690px;
-}
+@media (max-width: 640px) {
 
-.hero-blended .hero-copy .eyebrow {
-  margin-bottom: 16px;
-}
-
-.hero-blended .hero-copy h1 {
-  margin: 0 0 24px;
-  font-size: clamp(58px, 6.3vw, 94px);
-  line-height: .94;
-  letter-spacing: -.045em;
-}
-
-.hero-blended .hero-copy h1 em {
-  color: var(--green);
-  font-style: italic;
-}
-
-.hero-blended .hero-programme {
-  display: block;
-  font-family: 'DM Sans', system-ui, sans-serif;
-  font-size: .34em;
-  letter-spacing: .42em;
-  font-weight: 500;
-  margin-top: 24px;
-  color: var(--green);
-}
-
-.hero-blended .hero-copy .lead {
-  max-width: 590px;
-  margin: 0;
-  font-family: 'DM Sans', system-ui, sans-serif;
-  font-size: 18px;
-  line-height: 1.65;
-  color: #3e4c40;
-}
-
-.hero-blended .hero-copy .lead strong {
-  color: var(--green);
-}
-
-.hero-blended .hero-actions {
-  margin: 28px 0 18px;
-}
-
-.hero-blended .hero-actions .primary {
-  background: var(--orange);
-}
-
-.hero-blended .hero-actions .ghost {
-  background: rgba(255,255,255,.58);
-  border-color: #cfd5c7;
-}
-
-.hero-blended .proof {
-  gap: 16px;
-}
-
-.hero-blended .proof span {
-  color: #5f6b61;
-}
-
-.hero-blend-art {
-  position: relative;
-  min-height: 680px;
-  width: 100%;
-  display: block;
-  align-self: stretch;
-  overflow: hidden;
-}
-
-.hero-blend-art .hero-image-glow {
-  position: absolute;
-  inset: 8% 0 8% 8%;
-  z-index: 0;
-  background: #dce8d4;
-  filter: blur(45px);
-  opacity: .65;
-  border-radius: 50%;
-}
-
-.hero-blend-art img {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: -1%;
-  width: 82%;
-  height: 100%;
-  max-width: none;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 0;
-  box-shadow: none;
-  mix-blend-mode: multiply;
-
-  /* The important part: no hard image card.
-     The left edge fades into the cream background. */
-  -webkit-mask-image: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(0,0,0,.18) 8%,
-    rgba(0,0,0,.55) 18%,
-    #000 31%,
-    #000 100%
-  );
-  mask-image: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(0,0,0,.18) 8%,
-    rgba(0,0,0,.55) 18%,
-    #000 31%,
-    #000 100%
-  );
-}
-
-.hero-blend-art::after {
-  content: "";
-  position: absolute;
-  z-index: 3;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(
-      90deg,
-      #f7f4eb 0%,
-      rgba(247,244,235,.88) 7%,
-      rgba(247,244,235,.32) 20%,
-      transparent 36%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(247,244,235,.15),
-      transparent 18%,
-      transparent 82%,
-      rgba(247,244,235,.12)
-    );
-}
-
-.hero-blended .blend-badge {
-  position: absolute;
-  z-index: 5;
-  right: 8%;
-  bottom: 13%;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: rgba(40,82,40,.9);
-  color: white;
-  border: 2px solid rgba(255,255,255,.65);
-  box-shadow: 0 18px 45px rgba(31,48,32,.22);
-  transform: rotate(-4deg);
-}
-
-.hero-blended .blend-badge b {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  line-height: 1;
-  color: #f4b07d;
-}
-
-.hero-blended .blend-badge span {
-  margin-top: 5px;
-  font-size: 9px;
-  line-height: 1.45;
-  letter-spacing: .18em;
-  font-weight: 700;
-}
-
-/* Tablet */
-@media (max-width: 1000px) {
-  .hero-blended {
-    min-height: 620px;
-    grid-template-columns: .9fr 1.1fr;
-    padding-left: 5vw;
+  /* Hide the desktop hero only */
+  .hero {
+    display: none !important;
   }
 
-  .hero-blended .hero-copy {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  /* Show the dedicated mobile hero */
+  .mobile-hero {
+    display: block;
+    width: 100%;
+    background: var(--cream);
+    overflow: hidden;
   }
 
-  .hero-blended .hero-copy h1 {
-    font-size: clamp(50px, 7vw, 72px);
+  .mobile-hero-image {
+    width: 100%;
+    overflow: hidden;
+    background: #eeeae0;
   }
 
-  .hero-blend-art {
-    min-height: 620px;
+  .mobile-hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    object-fit: cover;
   }
 
-  .hero-blend-art img {
-    width: 92%;
+  .mobile-hero-content {
+    width: 100%;
+    padding: 34px 20px 38px;
+    text-align: center;
   }
 
-  .hero-blended .blend-badge {
-    width: 120px;
-    height: 120px;
-    right: 7%;
-    bottom: 10%;
+  .mobile-eyebrow {
+    margin: 0 0 14px;
+    color: var(--orange);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
   }
-}
 
-/* Mobile — image becomes a seamless full-width visual */
-@media (max-width: 700px) {
-  .hero-blended {
+  .mobile-hero-content h1 {
+    margin: 0;
+    color: var(--green);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 12vw, 58px);
+    font-weight: 500;
+    line-height: .98;
+  }
+
+  .mobile-hero-content h1 span {
+    display: block;
+    margin-top: 4px;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .mobile-hero-content h1 small {
+    display: block;
+    margin-top: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 6px;
+  }
+
+  .mobile-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 22px auto 18px;
+  }
+
+  .mobile-divider span {
+    height: 1px;
+    flex: 1;
+    background: var(--orange);
+  }
+
+  .mobile-divider b {
+    color: var(--orange);
+    font-size: 17px;
+  }
+
+  .mobile-description {
+    max-width: 430px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .mobile-description strong {
+    color: var(--green);
+  }
+
+  .mobile-actions {
     display: flex;
     flex-direction: column;
-    min-height: auto;
-    padding: 0;
-    gap: 0;
-    background:
-      linear-gradient(180deg, #f7f4eb 0%, #f7f4eb 55%, #eef2e8 100%);
-  }
-
-  .hero-blended .hero-copy {
-    width: 100%;
-    max-width: none;
-    padding: 58px 22px 28px;
-  }
-
-  .hero-blended .hero-copy h1 {
-    font-size: clamp(48px, 14vw, 70px);
-    line-height: .95;
-  }
-
-  .hero-blended .hero-copy .lead {
-    font-size: 16px;
-  }
-
-  .hero-blended .hero-programme {
-    font-size: 11px;
-    letter-spacing: .3em;
-    margin-top: 20px;
-  }
-
-  .hero-blended .hero-actions {
-    flex-direction: column;
+    gap: 11px;
     width: 100%;
     margin-top: 24px;
   }
 
-  .hero-blended .hero-actions .btn {
+  .mobile-actions button,
+  .mobile-actions a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     min-height: 52px;
+    padding: 13px 16px;
+    border-radius: 28px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .35px;
+    text-decoration: none;
   }
 
-  .hero-blended .proof {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 7px;
-    margin-top: 16px;
+  .mobile-primary-btn {
+    border: 0;
+    background: var(--orange);
+    color: #fff;
+    cursor: pointer;
   }
 
-  .hero-blend-art {
-    width: 100%;
-    min-height: 560px;
-    height: 560px;
-    overflow: hidden;
+  .mobile-primary-btn span {
+    margin-left: 8px;
   }
 
-  .hero-blend-art img {
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    -webkit-mask-image: linear-gradient(
-      180deg,
-      transparent 0%,
-      rgba(0,0,0,.2) 7%,
-      #000 20%,
-      #000 100%
-    );
-    mask-image: linear-gradient(
-      180deg,
-      transparent 0%,
-      rgba(0,0,0,.2) 7%,
-      #000 20%,
-      #000 100%
-    );
+  .mobile-whatsapp-btn {
+    background: #fff;
+    color: var(--green);
+    border: 1px solid var(--line);
   }
 
-  .hero-blend-art::after {
-    background: linear-gradient(
-      180deg,
-      #f7f4eb 0%,
-      rgba(247,244,235,.72) 9%,
-      transparent 24%,
-      transparent 88%,
-      rgba(247,244,235,.15) 100%
-    );
+  .mobile-whatsapp-btn span {
+    margin-right: 8px;
+    color: #25d366;
+    font-size: 17px;
   }
 
-  .hero-blended .blend-badge {
-    width: 105px;
-    height: 105px;
-    right: 18px;
-    bottom: 24px;
-  }
-
-  .hero-blended .blend-badge b {
-    font-size: 32px;
-  }
-
-  .hero-blended .blend-badge span {
-    font-size: 7px;
+  .mobile-note {
+    margin: 17px 0 0;
+    color: var(--muted);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
   }
 }
 
 @media (max-width: 380px) {
-  .hero-blended .hero-copy {
-    padding-left: 16px;
-    padding-right: 16px;
+
+  .mobile-hero-content {
+    padding: 28px 16px 34px;
   }
 
-  .hero-blended .hero-copy h1 {
-    font-size: 46px;
+  .mobile-hero-content h1 {
+    font-size: 40px;
   }
 
-  .hero-blend-art {
-    height: 500px;
-    min-height: 500px;
+  .mobile-hero-content h1 small {
+    font-size: 16px;
+    letter-spacing: 5px;
   }
-}
-/* =========================================================
-   MOBILE RESPONSIVE FIX
-   ========================================================= */
-
-/* Prevent horizontal scrolling on all devices */
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Make all elements calculate width correctly */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Images should never overflow their container */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Prevent long text from breaking the layout */
-h1,
-h2,
-h3,
-p,
-a,
-span {
-    overflow-wrap: break-word;
-}
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    .container {
-        width: 100%;
-        max-width: 100%;
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-content {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .hero-image {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .hero-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 640px) {
-
-    html,
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    body {
-        font-size: 16px;
-    }
-
-    /* Header */
-
-    header {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .nav {
-        width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    /* Container */
-
-    .container {
-        width: 100%;
-        max-width: 100%;
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-
-    /* Hero */
-
-    .hero {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .hero-content {
-        width: 100%;
-        max-width: 100%;
-        padding: 40px 18px;
-    }
-
-    .hero-content h1 {
-        font-size: clamp(42px, 12vw, 64px);
-        line-height: 0.95;
-    }
-
-    .hero-content p {
-        font-size: 17px;
-        line-height: 1.6;
-    }
-
-    /* Hero image */
-
-    .hero-image {
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-    .hero-image img {
-        width: 100%;
-        height: auto;
-        min-height: 0;
-        object-fit: cover;
-        display: block;
-    }
-
-    /* Buttons */
-
-    .hero-buttons,
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 12px;
-    }
-
-    .hero-buttons a,
-    .buttons a,
-    button {
-        width: 100%;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    /* Sections */
-
-    section {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    /* Cards */
-
-    .cards,
-    .features,
-    .benefits-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-
-    /* Typography */
-
-    h1 {
-        font-size: clamp(40px, 12vw, 60px);
-    }
-
-    h2 {
-        font-size: clamp(30px, 8vw, 44px);
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL PHONES
-   ========================================================= */
-
-@media (max-width: 380px) {
-
-    .container {
-        padding-left: 14px;
-        padding-right: 14px;
-    }
-
-    .hero-content {
-        padding-left: 14px;
-        padding-right: 14px;
-    }
-
-    .hero-content h1 {
-        font-size: 40px;
-    }
-
-    .hero-content p {
-        font-size: 15px;
-    }
-
-    .nav {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
 }
