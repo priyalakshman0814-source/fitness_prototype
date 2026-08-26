@@ -7,7 +7,8 @@
     name="viewport"
     content="width=device-width, initial-scale=1, viewport-fit=cover"
   />
-  <meta name="theme-color" content="#193b2b">
+
+  <meta name="theme-color" content="#193b2b" />
 
   <meta
     name="description"
@@ -550,6 +551,186 @@
 
     }
 
+
+    /* =========================================================
+       MOBILE HERO OVERRIDE
+       ========================================================= */
+
+    .mobile-hero {
+      display: none;
+    }
+
+    @media (max-width: 640px) {
+      /* Show the dedicated phone hero */
+      .mobile-hero {
+        display: block;
+        width: 100%;
+        background: #f7f3e9;
+        overflow: hidden;
+      }
+
+      /* Hide the desktop two-column hero only */
+      .hero {
+        display: none !important;
+      }
+
+      .mobile-hero-image {
+        width: 100%;
+        background: #eeeae0;
+        overflow: hidden;
+      }
+
+      .mobile-hero-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: none;
+        object-fit: cover;
+      }
+
+      .mobile-hero-content {
+        width: 100%;
+        padding: 34px 20px 38px;
+        text-align: center;
+      }
+
+      .mobile-eyebrow {
+        margin: 0 0 14px;
+        color: #e66a25;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
+
+      .mobile-hero-content h1 {
+        margin: 0;
+        color: #193b2b;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(42px, 12vw, 58px);
+        font-weight: 500;
+        line-height: .98;
+      }
+
+      .mobile-hero-content h1 span {
+        display: block;
+        margin-top: 4px;
+        font-style: italic;
+        font-weight: 600;
+      }
+
+      .mobile-hero-content h1 small {
+        display: block;
+        margin-top: 16px;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 6px;
+      }
+
+      .mobile-divider {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin: 22px auto 18px;
+      }
+
+      .mobile-divider span {
+        height: 1px;
+        flex: 1;
+        background: #df6a28;
+      }
+
+      .mobile-divider b {
+        color: #df6a28;
+        font-size: 17px;
+      }
+
+      .mobile-description {
+        max-width: 430px;
+        margin: 0 auto;
+        color: #405247;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      .mobile-description strong {
+        color: #193b2b;
+      }
+
+      .mobile-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        width: 100%;
+        margin-top: 24px;
+      }
+
+      .mobile-actions button,
+      .mobile-actions a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 52px;
+        padding: 13px 16px;
+        border-radius: 28px;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: .35px;
+        text-decoration: none;
+      }
+
+      .mobile-primary-btn {
+        border: 0;
+        background: #e9651f;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .mobile-primary-btn span {
+        margin-left: 8px;
+      }
+
+      .mobile-whatsapp-btn {
+        background: #fff;
+        color: #193b2b;
+        border: 1px solid #c8d0b9;
+      }
+
+      .mobile-whatsapp-btn span {
+        margin-right: 8px;
+        color: #25d366;
+        font-size: 17px;
+      }
+
+      .mobile-note {
+        margin: 17px 0 0;
+        color: #68756b;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .mobile-hero-content {
+        padding: 28px 16px 34px;
+      }
+
+      .mobile-hero-content h1 {
+        font-size: 40px;
+      }
+
+      .mobile-hero-content h1 small {
+        font-size: 16px;
+        letter-spacing: 5px;
+      }
+    }
+
   </style>
 </head>
 
@@ -622,8 +803,63 @@
 
 
     <!-- =======================================================
-         HERO
-         Seamless image-blend layout inspired by the reference
+         MOBILE HERO
+         Shown only on phones. Desktop hero remains unchanged.
+         ======================================================= -->
+    <section class="mobile-hero" aria-label="21-Day Transformation Programme">
+      <div class="mobile-hero-image">
+        <img
+          src="assets/21-day-client.jpg"
+          onerror="this.src='assets/21-day-transformation.jpg'"
+          alt="Wholesome Habits 21-Day Transformation Programme"
+        />
+      </div>
+
+      <div class="mobile-hero-content">
+        <p class="mobile-eyebrow">WHOLESOME HABITS</p>
+
+        <h1>
+          21-Day
+          <span>Transformation</span>
+          <small>PROGRAMME</small>
+        </h1>
+
+        <div class="mobile-divider" aria-hidden="true">
+          <span></span>
+          <b>✦</b>
+          <span></span>
+        </div>
+
+        <p class="mobile-description">
+          A structured 21-day journey to build habits that nourish your
+          <strong>body, mind and lifestyle.</strong>
+        </p>
+
+        <div class="mobile-actions">
+          <button class="mobile-primary-btn" data-open-register type="button">
+            JOIN 21-DAY PROGRAMME <span>→</span>
+          </button>
+
+          <a
+            class="mobile-whatsapp-btn"
+            href="https://wa.me/916364254886?text=Hi%20Wholesome%20Habits%2C%20I%27m%20interested%20in%20the%2021-Day%20Transformation%20Programme."
+            target="_blank"
+            rel="noopener"
+          >
+            <span>◉</span> CHAT ON WHATSAPP
+          </a>
+        </div>
+
+        <p class="mobile-note">
+          ✓ Personalised guidance &nbsp; ✓ Fitness + nutrition
+        </p>
+      </div>
+    </section>
+
+
+    <!-- =======================================================
+         DESKTOP / TABLET HERO
+         Hidden on phones and replaced by the mobile hero above.
          ======================================================= -->
 
     <section class="hero hero-blended">
