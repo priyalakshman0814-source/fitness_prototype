@@ -10,7 +10,7 @@ document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',
 modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 function prefill(name,goal){return `Hi! I'm ${name} 👋\n\nI just registered for the 21-Day Transformation Programme.\n\nMy goal is: ${goal}.\n\nI'm ready to get started! 💚`}
-heroWa.href=`https://wa.me/916364254886?text=${encodeURIComponent(prefill('there','build healthier habits'))}`;
+heroWa.href=`https://wa.me/9535224318?text=${encodeURIComponent(prefill('there','build healthier habits'))}`;
 form.addEventListener('submit',async e=>{
  e.preventDefault();
  const data=Object.fromEntries(new FormData(form).entries());
@@ -24,7 +24,7 @@ form.addEventListener('submit',async e=>{
    form.style.display='none';success.classList.add('show');
    setTimeout(()=>window.open(result.whatsappUrl,'_blank','noopener'),500);
  }catch(err){
-   const wa=`https://wa.me/916364254886?text=${encodeURIComponent(localMessage)}`;
+   const wa=`https://wa.me/9535224318?text=${encodeURIComponent(localMessage)}`;
    continueWa.href=wa;form.style.display='none';success.classList.add('show');
    setTimeout(()=>window.open(wa,'_blank','noopener'),500);
  }
