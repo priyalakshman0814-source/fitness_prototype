@@ -357,3 +357,234 @@
     min-height: 500px;
   }
 }
+/* =========================================================
+   MOBILE RESPONSIVE FIX
+   ========================================================= */
+
+/* Prevent horizontal scrolling on all devices */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Make all elements calculate width correctly */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Images should never overflow their container */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent long text from breaking the layout */
+h1,
+h2,
+h3,
+p,
+a,
+span {
+    overflow-wrap: break-word;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    /* Header */
+
+    header {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* Container */
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    /* Hero */
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px 18px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(42px, 12vw, 64px);
+        line-height: 0.95;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    /* Hero image */
+
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Buttons */
+
+    .hero-buttons,
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .hero-buttons a,
+    .buttons a,
+    button {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Sections */
+
+    section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Cards */
+
+    .cards,
+    .features,
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    /* Typography */
+
+    h1 {
+        font-size: clamp(40px, 12vw, 60px);
+    }
+
+    h2 {
+        font-size: clamp(30px, 8vw, 44px);
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .hero-content {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .nav {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+}
